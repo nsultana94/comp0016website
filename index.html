@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>IXN1 CFP Portal Engine for Project Proposals</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">CFP Portal Engine</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -38,15 +38,33 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="requirements.html">Requirements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
+            <a class="nav-link" href="contact.html">Research</a>
+          </li>
+          <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Design</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">UI Design</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">System Design</a>
+      
+    </div>
+  </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Implementation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html">Testing</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Evaluation</a>
+          </li>
+          
         </ul>
       </div>
     </div>
@@ -59,9 +77,11 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Clean Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <h3>IXN1 CFP Portal Engine for Project Proposals</h3>
+            <span class="subheading">Portal Engine for efficient collection, reviewal and distribution of projects across many companies and universities.</span>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
+
         </div>
       </div>
     </div>
@@ -70,69 +90,88 @@
   <!-- Main Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
-            </h2>
-            <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
-        </div>
+      <div class="container-sm">
+        
         <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-            </h2>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
-        </div>
+        <h3> Project Abstract </h3>
+        <p> This project is run along with corporate clients. 
+          It develops an open-source web portal for the IXN subscriber companies to deploy across their businesses, 
+          allowing project proposals to be advertised, collected and reviewed.</p>
+        
+          It should allow an organisation to collect project proposals using existing IXN templates, and feature a submission panel where 
+          reviewers can review projects with comments and a Green-Amber-Red style.
+        </p>
+          Projects should be allowed to be shared amongst universities and past completed projects should be indexed and archived.
         <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Science has not yet mastered prophecy
-            </h2>
-            <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
-        </div>
+        
+        
+
+        <h3> Solution </h3>
+
+        <p>
+            We developed a system design based on the implementation using SharePoint, due to its robust inbuilt network and as office 365 is an intranet most companies and universities use.  
+
+            Allows fluid data collection and distribution across companies and universities and uses many pre-existing features. 
+        </p>
+            With Sharepoint, we were able to develop a fluid way of data collection and using Microsoft Lists, 
+            an efficient way to display and organise the collected project proposals and efficient technique of reviewing and giving feedback to these projects using Microsoft Power Automate.
+        </p>
+        On the other hand, we will be using Django for front-end and back-end for a public version of the portal engine, requested by the NHS. Their systems are not reliant on Microsoft and therefore would prefer a standalone software.  
+      </p>
         <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Failure is not an option
-            </h2>
-            <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
-        </div>
-        <hr>
+        <h3> Achievement and Impact </h3>
+        
         <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
+       
       </div>
     </div>
   </div>
-
-  <hr>
+  &nbsp;
+  <hr class="rounded">
+  <section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Our  Team</h2>
+           
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="team-member">
+                    
+                    <img class="mx-auto " src="img/team/" alt="" />
+                    <h4>Naima Sultana</h4>
+                    <p class="text-muted">Lead Designer</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
+                    <h4>Alexandra-Valentina Irimia</h4>
+                    <p class="text-muted">Lead Marketer</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
+                    <h4>Cian Goon</h4>
+                    <p class="text-muted">Lead Developer</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
+        </div>
+    </div>
+</section>
 
   <!-- Footer -->
   <footer>
