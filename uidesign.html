@@ -77,8 +77,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h3>IXN1 CFP Portal Engine for Project Proposals</h3>
-            <span class="subheading">Portal Engine for efficient collection, reviewal and distribution of projects across many companies and universities.</span>
+            <h3>UI Design</h3>
+            <span class="subheading"> User interface design</span>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
@@ -93,39 +93,51 @@
       <div class="container-sm">
         
         <hr>
-        <h3> Project Abstract </h3>
-        <p> This project is run along with corporate clients. 
-          It develops an open-source web portal for the IXN subscriber companies to deploy across their businesses, 
-          allowing project proposals to be advertised, collected and reviewed.</p>
-        
-          It should allow an organisation to collect project proposals using existing IXN templates, and feature a submission panel where 
-          reviewers can review projects with comments and a Green-Amber-Red style.
+        <h3> Sketches</h3>
         </p>
-          Projects should be allowed to be shared amongst universities and past completed projects should be indexed and archived.
+        <p> We initially designed several wireframe sketches that would smoothen the transition to a higher-fidelity interactive prototype.
+         </p> We considered the possible idea of a timeline or a checklist system, so it was easy to track each stage of the application process and so the users are not overwhelmed by a large form of information. We iterated this process of multiple sketches in order to obtain various designs. 
+        </p>
+         <img src="img/sketches/1.jpeg" alt="Sketches" style="width:700px;height:400px;">
+         <div class="caption">Submission Portal Sketches</div>
+        </p> The sketches above tried to encompass a user-friendly interaction which make the user experience easy to follow and a fluid process. We felt the submission portal was an integral part of the user experience.
+        </p>
+        <img src="img/sketches/3.jpeg" alt="Sketches" style="width:600px;height:400px;">
+        <div class="caption">Feedback System Sketches</div>
+
+        </p> We designed multiple sketches for the reviewing system considering a red-amber-green system for feedback as well as a point-based system. Users expressed they liked the red-amber-green method with a combination of point based as it allowed easy comparison of projects. 
+        </p>
+
+
         <hr>
         
         
 
-        <h3> Solution </h3>
+        <h3> Prototype </h3>
 
         <p>
-            We developed a system design based on the implementation using SharePoint, due to its robust inbuilt network and as office 365 is an intranet most companies and universities use.  
-
-            Allows fluid data collection and distribution across companies and universities and uses many pre-existing features. 
+           We developed a high-fidelity prototype from our sketches using Figma. We implemented our primary pages such as the submission portal, submitted project proposals, reviewing pages and past successful pages.  
         </p>
-            With Sharepoint, we were able to develop a fluid way of data collection and using Microsoft Lists, 
-            an efficient way to display and organise the collected project proposals and efficient technique of reviewing and giving feedback to these projects using Microsoft Power Automate.
+           The submission portal was designed using a timeline to separate the categories of the proposal form, which mimics the existing IXN project proposal form with additional sections 
+           such as the user’s motivations for submitting the project which some clients wished the system to implement. 
         </p>
         On the other hand, we will be using Django for front-end and back-end for a public version of the portal engine, requested by the NHS. Their systems are not reliant on Microsoft and therefore would prefer a standalone software.  
       </p>
-        <hr>
-        <h3> Achievement and Impact </h3>
-        TODO talk about achievement and impact
-        <hr>
-        <h3> Video </h3>
-        <p> TODO insert 8 min video</p>
+      We discussed possible areas of improvement and areas of success for our prototype, and organised them in the table below. 
+      </p>
+ <img src="img/personas/evaluation.png" alt="Evaluation" style="width:600px;height:400px;">
+</p>
 
+      <h5> Prototype demo </h5>
+      </p>  </p>
+      </p>
+   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLZ5J5czMBmID95ImfYA0kN%2FIXN-CFP-Portal-Engine%3Fnode-id%3D16%253A4382%26scaling%3Dscale-down" allowfullscreen></iframe>
+<div class="caption">Improved prototype of CFP Project Proposal Portal</div>
 
+      </p> The prototype now highlighted the main functionality of the system; hence we were able to start designing the architectural design of the system and to start thinking of possible methods of implementation. 
+
+        <hr>
+       
         
         <!-- Pager -->
        
@@ -134,50 +146,7 @@
   </div>
   &nbsp;
   <hr class="rounded">
-  <section class="page-section bg-light" id="team">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Our  Team</h2>
-           
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="team-member">
-                    
-                    <img class="mx-auto " src="img/team/" alt="" />
-                    <h4>Naima Sultana</h4>
-                    <p class="text-muted">Lead Designer</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
-                    <h4>Alexandra-Valentina Irimia</h4>
-                    <p class="text-muted">Lead Marketer</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
-                    <h4>Cian Goon</h4>
-                    <p class="text-muted">Lead Developer</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
-        </div>
-    </div>
-</section>
+  
 
   <!-- Footer -->
   <footer>
