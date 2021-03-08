@@ -78,7 +78,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h3>System Design</h3>
-            <span class="subheading">System design and architecture and user flow</span>
+            <span class="subheading">System design, architecture and user flow</span>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
@@ -101,15 +101,24 @@
         <p>
             Although we had a good understanding of the main functionality of the system, 
             it was important to consider how the system interacted with each other and the overall design. 
-            We created a basic outline of the structure, of the system’s implementation. 
-            </p> After discussing with the clients it was highlighted that it would be important to deploy this within a company’s own intranet due to various confidentially and legal issues, it would not have been appropriate to launch this in a public platform with a login system. As Office 365 is a heavily used system in a large majority of businesses and universities, three of our clients were comfortable with the use of Microsoft Office’s SharePoint feature to implement the platform 
-            as it allowed fluid data collection and handling as well as allowing the system to be implemented within a company’s own intranet.  
+            We created a basic outline of the structure of the system’s implementation. 
+        </p> 
+            After discussing with the clients it was highlighted that it would be important to deploy this within a company’s own intranet due to various confidentially 
+            and legal issues; it would not have been appropriate to launch this in a public platform with a login system. 
+            As Office 365 is a heavily used system in a large majority of businesses and universities, three of our clients were comfortable with the use of 
+            Microsoft Office’s SharePoint feature to implement the platform as it allowed fluid data collection and handling as well as allowing 
+            the system to be implemented within a company’s own intranet.  
         </p>
-            However, it was challenged to implement a SharePoint solution to the system for the NHS, as smaller hospitals and trusts may not have the technology to keep up to date with Microsoft’s system. Elaborate more on why you cant do it Therefore, a possible solution was to implement a website using Django and flask for the clients who do not have SharePoint ensuring inclusivity across all possible users. 
-            This will be connected to a web gateway so data will remain confidential within companies. 
+            However, it was challenging to implement a SharePoint solution to the system for the NHS, as smaller hospitals and trusts may not have the technology to keep up to date with Microsoft’s system. 
+            In addition to this, after speaking to our client, it was clear that amongst other issues, it would be difficult to gain acccess to certain files of 
+            different confidentiality levels, considering they were representing real patients, adding an additional layer of bureaucracy.
+            Therefore, a possible solution was to implement a website using Django and Flask for the clients who do not have SharePoint ensuring inclusivity across 
+            all possible users. This will be connected to a web gateway so data will remain confidential within companies. 
         </p>
-        Once submitted proposals have been accepted by company leads and managers, it will be exported to a restful API where it will export a restful feed where the public can access this information. This is involved in the stage electing universities to projects after they have been accepted. The restful API will allow universities to publicly subscribe to listings of projects and to see what is available. This data will be fed to the university intranets, f
-        or example their respective Sharepoint websites. 
+        Once submitted proposals have been accepted by company leads and managers, it will be exported to a restful API where it will export a 
+        restful feed where the public can access this information. This is involved in the stage electing universities to projects after they have been accepted.
+        The restful API will allow universities to publicly subscribe to listings of projects and to see what is available. 
+        This data will be fed to the university intranets, for example their respective Sharepoint websites. 
         </p> 
         A diagram is presented in Figure 1 highlighted the movement of data between the different components to show a basic overview of the architectural design of the overall system. 
         </p>
@@ -117,12 +126,12 @@
         <div class="caption">Overall system architecture</div>
         <hr>
         <h3> Data Flow </h3>
-        </p> TODO write about user flow
-        <img src="img/design/userflow.png" alt="UserFlow" style="width:700px;height:600px;">
-        <div class="caption">Diagram of user flow</div>
+        <img src="img/design/userflow.png" alt="UserFlow" style="width:800px;height:600px;">
+        <div class="caption">Diagram of data flow</div>
+        <h3> User Flow </h3>
+        <img src="img/design/userflowdiagram.png" alt="UserFlow" style="width:800px;height:600px;">
         <!-- Pager -->
        </p> 
-        <h3> Use Cases </h3>
       </div>
     </div>
   </div>
