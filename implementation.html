@@ -90,13 +90,15 @@
   <div class="container">
     <div class="row">
       <div class="container-md">
-      <h3> First steps</h3>
-      <h4> Sharepoint Website</h4>
+
+      
+      <p> 
+
+      <h4> Implementation</h4>
         <p>
         Implementing the design in Sharepoint was a challenging process as our team were not familiar with the user interface of the design page, and the 
         multiple power apps that were available to us. However, due to the extensive research and prototyping that had been done, we began to learn the ropes of the 
         Sharepoint interface and after a number of weeks, majority of the functionalities were implemented as intended.
-        <h5> Submission Portal</h5>
 
         </p>
         Once a set number of platforms have been identified, the next steps were to make a note of each platform, categorising the functionalities and overall 
@@ -104,15 +106,53 @@
         <p>
         These will be outlined below.
         </p>
-        <h4> Django Application</h4>
-        <p>
-        Once the interactive Figma prototype had been created, the next steps were to begin creating the front end design 
-        </p>
+       
+       
 
         
      <hr> 
       <h3> Key Features </h3>
-      Describe how you implemented the key features
+    &nbsp;
+      <h4> Submission Portal and display of projects</h4>
+      &nbsp;
+      <h5> Sharepoint </h5>
+
+      The submission portal was implemented using the exisiting functionality of Microsoft Forms.
+      The form was separated into sections for a more user-friendly experience. 
+      The form is connected to a list within the SharePoint site, which will automatically add the data of the new responses to the list using Microsoft Power Automate. 
+      </p>The data is then presented catagorically in a Microsoft List which can then be filtered, and queried with the inbuilt features within Microsoft Lists. 
+      Data in the fields of are visually represented using pills, and a range of different views based on the need of the reviewer.
+      </p>
+      <h5> Django </h5>
+
+      The submission portal in django was implemented using inbuilt django forms which accesses the fields required from the project model. When a submitter submits a project for approva, this sends a POST request to the backend server of django which stores the data appropriately into the Project model. This data is then displayed in a table in the project dashboard ordered 
+      by submission date, by iterating through the stored instances in the Project database. 
+      </p>
+      With the use of the django-filters libraries, an extensive query can be performed based on multiple fields which is implemented in the projects grid and lists which can query projects based on specified criteria by the user
+      so projects can be categorised according to preference. 
+      </p>
+      The taggable manager library is used to parse tags with the use of javascript and bootstrap so tags can be associated with projects. 
+     </p>
+
+     <h4> Reviewing Projects and giving feedback </h4>
+
+     <h5> Sharepoint </h5>
+     <h5> Django </h5>
+
+      <h4> Approval of projects</h4>
+      <h5> Sharepoint </h5>
+     <h5> Django </h5>
+
+     <h4> Storage of data - Databases </h4>
+     <h5> Sharepoint </h5>
+     <h5> Django </h5>
+
+     <h4> Authentication and Permissions - django </h4>
+
+     <h4> Exporting Data </h4>
+
+    
+
     
      
       </ul>
