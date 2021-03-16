@@ -123,10 +123,14 @@
       </p>The data is then presented catagorically in a Microsoft List which can then be filtered, and queried with the inbuilt features within Microsoft Lists. 
       Data in the fields of are visually represented using pills, and a range of different views based on the need of the reviewer.
       </p>
-      <h5> Django </h5>
+
+      <img src="img/implementation/proposalsubmissions.png" alt="Evaluation"  width="600" height="300">
+        <div class="caption" align="left">Microsoft Power Automate flow for project proposals</div>
+        </p> The image above shows the flow of data in the submission of projects. When a project is submitted, this acts as a trigger for this flow which obtains the response details and adds it to the appropriate project submissions list with the correct data and adds it to the excel sheet storing the project proposals.</p>
+      <h5> Django: TODO</h5>
 
       The submission portal in django was implemented using inbuilt django forms which accesses the fields required from the project model. When a submitter submits a project for approva, this sends a POST request to the backend server of django which stores the data appropriately into the Project model. This data is then displayed in a table in the project dashboard ordered 
-      by submission date, by iterating through the stored instances in the Project database. 
+      by submission date, by iterating through the stored instances in the Project. 
       </p>
       With the use of the django-filters libraries, an extensive query can be performed based on multiple fields which is implemented in the projects grid and lists which can query projects based on specified criteria by the user
       so projects can be categorised according to preference. 
@@ -134,22 +138,58 @@
       The taggable manager library is used to parse tags with the use of javascript and bootstrap so tags can be associated with projects. 
      </p>
 
+<hr>
      <h4> Reviewing Projects and giving feedback </h4>
 
      <h5> Sharepoint </h5>
-     <h5> Django </h5>
+     <img src="img/implementation/feedback.png" alt="Evaluation" align="left" width="200" height="400" >
 
-      <h4> Approval of projects</h4>
+     </p> Each user can be assigned to a project using the inbuilt Microsoft 365 feature in SharePoint, where they can then give feedback by clicking a button which will trigger a flow that will
+     prompt the user for inputs such as the feedback they wish to give, the RAG rating, and a dropdown multi list option of 
+     extra feedback details. These feedback details will then be appended to the feedback columns in the proposal submissions list, and the number of red/amber/green ratings will be incremented based on the reviewer's answer.
+     </p>This will then be used to update the specific project in the SharePoint list as well as the excel sheet to reflect the newly added changes.
+     </p> The list column is formatted using json to only show when a project has not been accepted / rejected and clicking on the button will trigger the flow, and only members within the site organisation who can edit the site are able to trigger the flow.</p>
+     
+     &nbsp;
+     &nbsp;
+     &nbsp;
+     &nbsp;
+     &nbsp;
+     
+     <h5> Django: TODO </h5>
+<hr>
+    <h4> Approval of projects</h4>
       <h5> Sharepoint </h5>
-     <h5> Django </h5>
+      </p> Another button is displayed in the sharepoint list, if the status of the project is neither accepted nor rejected. This button can be triggered by any reviewer once all feedback has been sent, to send an email to the 
+      approver of the project, giving details of the project, the feedback, the RAG ratings and list of reviewers. This starts a Microsoft Approval process, where the approver can accept or reject the project through that and this will
+      update the status accordingly based on the answer. If the project is accepted, a new item will be created in the Accepted Projects list and the submitter will be informed via email. 
+      </p> The approvers can be selected in the flow, and this can be a group of leads as well as one lead, and preferences can be set such as the ability to ensure all approvers respond, or the ability for the system to
+      update the status based on the response of the first approver. </p>
 
+       <img src="img/implementation/approvals.png" alt="Evaluation" width="700" height="400" >
+       </p>
+     <h5> Django: TODO </h5>
+<hr>
      <h4> Storage of data - Databases </h4>
      <h5> Sharepoint </h5>
-     <h5> Django </h5>
-
+     </p> The lists can be exported with a query or without a query as a csv file by clicking the export button that is built into the SharePoint lists. The accepted projects and project proposals 
+     are also stored in an excel sheet, stored in the document library of the SharePoint site. The feedback data is also stored in the excel sheets, which can be mined by companies to show feedback from different individuals.
+     </p>
+     <h5> Django: TODO </h5>
+     [talk about exporting data as well as databases used]
+     [talk about ER relationships]
+<hr>
      <h4> Authentication and Permissions - django </h4>
+<hr>
+     
+<hr>
+     <h4> Deployment </h4>
+     <h5> Sharepoint </h5>
+     </p> The flows described above can be exported as a zip, which can be imported into another organisation's SharePoint site by importing the zip file and changing the connections. The connections can then be changed to the appropriate lists and users and deployed within 
+     an organisation's own SharePoint site. This is explained in the deployment video in the Appendicies.
 
-     <h4> Exporting Data </h4>
+     [TODO: talk about the list deployment]
+     <h5> Django: TODO </h5>
 
     
 
