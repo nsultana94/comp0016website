@@ -23,6 +23,25 @@
 
 </head>
 
+<style>
+table {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
 <body>
 
   <!-- Navigation -->
@@ -78,8 +97,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>Research</h1>
-            <span class="subheading">Conducting research on relevant project proposal engines</span>
+            <h1>Testing</h1>
+            <span class="subheading">Testing the system</span>
           </div>
         </div>
       </div>
@@ -95,13 +114,90 @@
             conduct the test, what results you get, and your analysis or conclusion to the results.
           </p>
       <h3> Testing Strategy </h3>
+
+      </p> Throughout the project we tried to adapt the agile technique of Test-Driven Development. This allowed us to test constantly after we implemented each feature, and allowed to us to ensure that each feature was fully functional and bug free before we continued working
+      on another feature. We were able to adapt pair programming through the development process and so as a result, we were able to give feedback on eachother's code and test for bugs. We would also have frequent code reviews of each other's code
+      in order to make sure the code was seamless and bug free. 
+
+      </p> As we were trying to do TDD, this revealed to us many bugs as we developed, but they were easy to solve as it was easy to pinpoint the source of the bugs. This is because, we would only push to the main branch in the repo  only if the code was functioning and so we knew that it was working up until that point.
+      We also made great use of the github branch funtionality, so created branches for different versions of the code so we could preserve fully working code and implement new features on a new branch so we could test thoroughly before merging the branches.
+      
+      
+      </p>Throughout the development process, we tested each feature thoroughly by testing the functionality as we went. For instance, for testing the submission portal, we tested the system's response to a submission with correct data formats, and then a submission with incorrect data formats, and ensured the
+      results were as expected.
+      </p>
+
+----ADD MORE--- 
+      <h3> System Testing </h3>
+
+      
+      </p>When developing the key features, we tested each process in small increments as we developed. For instance, when developing the submission portal, we tested whether the data was correctly being stored into the database before
+      starting the implementation of the display of the projects. 
+      
+      </p>We created multiple instances of test data to ensure the system was doing as aspected. The expected function of the submission portal was that it should store the submission details
+      into a database, which is displayed by the system and can be queried and filtered accordingly.
+
+     </p> ----SCREENSHOTS --- 
+
+      
+</p> ----ADD MORE --- 
+
       <h3> Unit and Integration Testing </h3>
+      
+      When developing the SharePoint site, the most important aspect to test was the power automate flows. Therefore, after
+      designing the flow, we tested each individual flow's functionality using Microsoft's inbuilt test functionality. This allowed us to manually trigger the flow by creating arbitrary data ourselves 
+      or automatically triggering the flow using a recent response or trigger. This allowed us test each flow separately, isolated from the entire system, and the system would show whether the 
+      flow failed or succeeded. It would show the point of failure clearly in the diagram, and so we were able to fix and restructure the design as we developed. By testing the
+      flows individually, we could be confident that any source of bugs in functionality were not from the individual flows as we would be alerted by email if the flow failed.
+
+</p> ----ADD MORE --- 
+      
+
       <h3> Compatibility Testing </h3>
+      We developed the open-source django platform to be compatible for all screen sizes. The front-end was developed to use containers that were not fixed and fluid to the size of the screen. 
+      Initially, our side bar was fixed and our layout was fixed which causes display issues when changing the screen size from full screen. However, by changing the layout and containter types as well as 
+      adding an option to temporarily hide the navigation bar, this reduced the disarray from changing the screen size so all the key content was still shown and visible to the users.
+      </p>
+      </p> ----ADD MORE --- 
       <h3> Responsive Design Testing </h3>
+      </p> ----ADD MORE --- 
+      --  aware -- 
+</p>
+
       <h3> Performance and Stress Testing </h3>
+      </p>
+      -- not done but will be deployed to use -- 
+      </p>
       <h3> User Acceptance Testing</h3>
-        — Testers
-        — Test cases
+</p>
+
+It was difficult to get a variety of test cases and testers given the current pandemic as we could not ask a variety of different ages or people, other than students 
+or family. In an ideal situation, we would have liked to get feedback from more people with a non-technical background and a variety of ages and technical experience.
+</p>
+<h5> Django user testers </h5>
+
+  
+  
+  <table>
+  <tr>
+    <th>Tester</th>
+    <th>Tester Details</th>
+    <th>UI Design</th>
+    <th>Effectiveness</th>
+    <th>Learnability</th>
+    <th>Visibility</th>
+    <th>Overall Feedback</th>
+  </tr>
+  <tr>
+    <td>Saachi Pahwa</td>
+     <td>19 years old, Computer Scientist </td>
+    
+  
+  </tr>
+ 
+</table>
+
+        
         — Feedback from testers and project partners
 
 
