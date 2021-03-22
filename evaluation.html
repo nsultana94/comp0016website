@@ -22,6 +22,24 @@
   <link href="css/clean-blog.min.css" rel="stylesheet">
 
 </head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: 	#F5F5F5;
+}
+</style>
 
 <body>
 
@@ -75,14 +93,14 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+  <header class="masthead" style="background-color:#006d5b">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>Research</h1>
-            <span class="subheading">Conducting research on relevant project proposal engines</span>
+            <h1>Evaluation</h1>
+            <span class="subheading">Evaluation of our project</span>
           </div>
         </div>
       </div>
@@ -94,19 +112,191 @@
     <div class="row">
       <div class="container-md">
         <h3> Summary of achievements </h3>
-        <ul>
-            <li> An achievement table to list the MoSCow features, the completed states, and contributors</li>
-            <li> A list of known bugs </li>
-            <li> Individual contribution distribution table </li>
-        </ul>
+       
+            <h5> An achievement table to list the MoSCow features, the completed states, and contributors</h5>
+
+            <h5> List of known bugs </h5>
+
+  <table>
+  <tr>
+    <th>Bug</th>
+    <th>System</th>
+    <th>Priority</th>
+    
+  </tr>
+
+   <tr>
+    <th>Expertise skills and technologies required saved in incorrect format in excel sheet, does not save value but the json</th>
+    <th>SharePoint</th>
+    <th>Medium</th>  
+  </tr>
+  
+
+  <tr>
+    <th>Showing some braces and comments on the display of review portal, just need to comment it out in deployment code. It is updated in the repo but not in the deployment code.</th>
+    <th>Django</th>
+    <th> Low </th>  
+  </tr>
+
+  <tr>
+    <th>Missing pagination in the project grid and project list display</th>
+    <th>Django</th>
+    <th>Medium</th>  
+  </tr>
+
+  </table>
+  <hr>
+            
+            <h5> Individual contribution table </h5>
+            <table>
+  <tr>
+    <th>Work packages</th>
+    <th>Naima Sultana</th>
+    <th>Alexandra Irimia</th>
+    <th>Cian Goon</th>
+    
+    
+  </tr>
+
+  <tr> 
+  <td> Client Liasion </td>
+  <td> 25% </td>
+  <td> 60% </td>
+  <td> 15% </td>
+
+</tr>
+
+<tr> 
+  <td> Requirement Analysis </td>
+  <td> 35% </td>
+  <td> 35% </td>
+  <td> 30% </td>
+
+</tr>
+<tr> 
+  <td> Research </td>
+  <td> 40% </td>
+  <td> 20% </td>
+  <td> 40% </td>
+
+</tr>
+<tr> 
+  <td> UI design </td>
+  <td> 33.3% </td>
+  <td> 33.3% </td>
+  <td> 33.3% </td>
+
+</tr>
+<tr> 
+  <td> Programming </td>
+  <td> 50% </td>
+  <td> 50% </td>
+  <td> 0% </td>
+
+</tr>
+<tr> 
+  <td> Testing </td>
+  <td> 45% </td>
+  <td> 45% </td>
+  <td> 10 </td>
+
+</tr>
+<tr> 
+  <td> Development Blog </td>
+  <td> 33.3% </td>
+  <td> 33.3% </td>
+  <td> 33.3% </td>
+
+</tr>
+<tr> 
+  <td> Website Editing</td>
+  <td> 50% </td>
+  <td> 20% </td>
+  <td> 30% </td>
+
+</tr>
+<tr> 
+  <td> Overall Contribution</td>
+  <td> 39% </td>
+  <td> 37% </td>
+  <td> 24% </td>
+
+</tr>
+<tr> 
+  <td> Roles</td>
+  <td> Back-end Developer ​
+
+Tester, Report Website Editor</td>
+  <td> Front-end Developer, Tester, Report Website Editor, Client Liaison </td>
+  <td> Researcher, Report Website Editor, UI Designer​</td>
+
+</tr>
+  
+  
+
+
+ 
+</table>
+
 <hr>
         <h3> Critical evaluation of the project </h3>
-        <h5> User interface / user experience (if applicable) </h5>
-        <h5> Functionality </h5>
-        <h5> Stability </h5>
-        <h5> Efficiency </h5>
-        <h5> Compatibility </h5>
+        <h5> User interface / user experience (if applicable)   [TODO] </h5>
+
+        </p> After feedback from the users, most users expressed that the UI was very clear to use and user-friendly. They expressed
+        the layout was very clear and simple enough to understand for both systems and it the mapping was successful for both systems. Users also expressed the system 
+        successfully achieved the usability goal of effectiveness, and that is successfully met the main functional requirements of the system. The users also expressed
+        that the systems were learnable as well as memorable which is an important aspect of usability.
+</p>
+        In the future, I think our UI could be improved by increasing the feedback of our systems. For instance, it should be clearer which button has been pressed by the user, perhaps by highlighting the buttons. It should also give
+        a clearer UI of whether a project has been approved/rejected as well as when a person has successfully given feedback. This could improve clarity 
+        of the user-experience. The visibility of the system could also be improved by clearly marking aspects of the system that is clickable, this could be done by changing the colour
+        when you hover over the button.
+    </p>
+        <h5> Functionality  [TODO] </h5>
+
+        </p> We think both systems provide the main functionalities required for a CFP portal. In both systems, the user can submit projects which will be collected and displayed for
+        reviewers to view. The reviewers are able to categorise projects and search for them as necessary. Both systems also have the functionality of adding feedback to a project,
+        with the criteria being easily changeable in both systems. Finally, in both systems, an approver is able to accept or reject the project by viewing the feedback given, which will be
+        stored in an accepted projects database. The users are also able to export the data as required.
+    </p>
+        However, I think we can improve the functionality of some aspects of both systems. For example, in the Django system, currently the user 
+        can only export the full project list or the full accepted list. I think it would have been better if we had added the functionality to export the data that is currently being displayed so results 
+        of queries could also be exported too. 
+</p>
+        <h5> Stability  [TODO] </h5>
+
+        </p> Due to the nature of Microsoft Sharepoint, the style and implementation of the lists and flows cannot be altered much as a user. The stability is maintained by Microsoft and as an user you cannot
+        change the internal structure of these which may alter the overall functionality and stability of the system. Both technologies have been vastly used within organisations and tested under performance and 
+        over a large workload. As a result, the flows and lists are very stable and unlikely to present bugs or errors. 
+       </p>
+        In the future, it would be beneficial to implement an archiving feature in both systems, as over time the number of projects submitted may overwhelm the system and so may result in instability 
+        due to the huge amount of data. The archiving feature could archive the database used and hence reset the project displays.
+</p>
+        <h5> Efficiency   [TODO]</h5>
+        [TODO: talk about good things]
+
+</p>
+        In the SharePoint implementation, it would have been better to display the lists according to the projects that have been assigned to you instead of the entire collation of projects, as this may be difficult 
+        to sort through and display. This may have been more efficient for the users, as otherwise they have to filter or search through it accordingly.
+</p>
+        <h5> Compatibility  [TODO] </h5>
+        [TODO: talk about good things]
+
+
+</p>
+        In Django system, in the future I think it would have been beneficial to implement a single sign on method into the system. This prevents a user from creating a new 
+        account solely for our system, and would have allowed them to use their pre-exisiting account. We were unable to implement this due to 
+        lack of time, but in the future I think this would have increased compatibility of the Django system with many different organisations, as they could have integrated their
+        pre-existing credentials with our system.
+
+
+
         <h5> Maintainability </h5>
+</p>
+The SharePoint system is very easy to maintain due to the robustness of the system. Power Automate handles the majority of the back-end and is well maintained by Microsoft. If a flow failed, the owner would receive emails alerting them of
+this as well as the source of the error. As a result, any bugs can be easily fixed or improvements can be made easily to flows. However, any bugs found in the execution of the flows or the lists may be more difficult to fix due to the inability 
+to change the internal structure of these as a regular user. If these bugs persist, a problem is that you will have to depend on Microsoft to fix these issues internally.
+
         <h5> Project management </h5>
         
         <hr>
