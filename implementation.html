@@ -66,6 +66,9 @@
           <li class="nav-item">
             <a class="nav-link" href="evaluation.html">Evaluation</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="appendices.html">Appendices</a>
+          </li>
           
         </ul>
       </div>
@@ -136,7 +139,7 @@
     &nbsp;
       <center><h4> Submission Portal and display of projects</h4></center>
       &nbsp;
-      <h5> <span class="badge badge-warning"> Sharepoint </span></h5>
+      <h5> <span class="badge badge-warning"> SharePoint </span></h5>
 
       The submission portal was implemented using the exisiting functionality of Microsoft Forms.
       The form was separated into sections for a more user-friendly experience. 
@@ -214,7 +217,7 @@
 <hr>
      <center><h4> Reviewing Projects and giving feedback </h4></center>
 
-     <h5> <span class="badge badge-warning">Sharepoint</span> </h5>
+     <h5> <span class="badge badge-warning">SharePoint</span> </h5>
      <br>
      <img src="img/implementation/feedback.png" alt="Evaluation" align="left" width="200" height="400" >
       
@@ -309,31 +312,124 @@
 
 
 <hr>
-     <h4> Storage of data - Databases </h4>
-     <h5> Sharepoint </h5>
-     </p> The lists can be exported with a query or without a query as a csv file by clicking the export button that is built into the SharePoint lists. The accepted projects and project proposals 
-     are also stored in an excel sheet, stored in the document library of the SharePoint site. The feedback data is also stored in the excel sheets, which can be mined by companies to show feedback from different individuals.
+    <center> <h4> Storage of data - Databases </h4></center>
+      <h5><span class="badge badge-warning">SharePoint  </span></h5>
+     </p> The lists can be exported with a query or without a query as a CSV file by clicking the export button that is built into the SharePoint lists. The accepted projects and project proposals 
+     are also stored in an Excel sheet, stored in the document library of the SharePoint site. The feedback data is also stored in the Excel sheets, which can be mined by companies to show feedback from different individuals.
      </p>
-     <h5> Django: TODO </h5>
-     [talk about exporting data as well as databases used]
+     <h5><span class="badge badge-warning"> Django  </span></h5>
+     <p> In terms of the databases, we used SQLite3 because of its self-contained, small, yet feasible and reliable relational database management system that comes at once with the installation, configuration and lauching of the Django backbone project. 
+     It is configured by default in the <code> settings.py </code> file under the databases, as follows: </p>
+     <center><img src="img/implementation/sqlite3.png" alt="Evaluation" width="400" height="100" ></center>
+
+     <p> We handled the database through SQL Server Management software, where we created and updated the tables before the actual implementation in the Visual Studio Code in order to make sure the code will not break and to ensure the accessibility and avoid the troubleshooting issues when integrating within the whole system
+     The database contains several tables enlisted as classes, which we implemented in the <code> models.py </code> file. 
+     The core ones are Person model and Review model. The fields in the models are of the structure below:
+     </p> 
+
+    
+  
+      <div class="container" style="background-color:#EAEAEA; padding:10px;" >
+      <pre class="brush: python notranslate"><code>my_field_name <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span> blank<span class="token operator">=</span><span class="token number">True</span><span class="token punctuation">,</span> default<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">,</span> verbose_name<span class="token operator">=</span><span class="token string">'Enter field info'</span><span class="token punctuation">)</span></code></pre>
+     
+      </div>
+
+      <p>Our above example is a field called <code>my_field_name</code>, of type <code>models.CharField</code> — which means that this field will contain strings of alphanumeric characters. The field types are assigned using specific classes, which determine the type of record that is used to store the data in the database, along with validation criteria to be used when values are received from an HTML form (i.e. what constitutes a valid value). The field types can also take arguments that further specify how the field is stored or can be used. </p>
+      <p> In the Person model we defined fields such as name, project_title, summarised_abstract, department, organisation etc. of type <code>models.CharField</code>, but we added fields of types <code>models.TextField</code> that allowed us to define a larger text area spanning on multiple rows and columns, of type <code>models.EmailField</code> for validating emails, <code>models.URLField</code> for GIT links, or <code>models.ChoiceField</code> for the data which had to display to the user a series of options to choose from.  
+       <div class="row">
+     
+            <img src="img/implementation/personmodel1.png" alt="Evaluation"  width="50%" >
+
+  
+            <img src="img/implementation/personmodel2.png" alt="Evaluation"  width="50%" >
+             <pre><div class="caption">           Fig. Person Model Part 1 in models.py                                    Fig. Person Model Part 2 in models.py</div>
+            </pre>
+  
+      </div>
+      <br>
+       <div class="row">
+     
+            <img src="img/implementation/personmodel3.png" alt="Evaluation"  width="40%" >
+            <img src="img/implementation/personmodel4.png" alt="Evaluation"  width="60%" >
+         <pre><div class="caption">         Fig. Person Model Part 3 in models.py                                      Fig. Person Model Part 4 in models.py</div>
+            </pre>
+      </div>
+<p>
+      The information filled in for a review is stored in the <code> Review model </code>which has an identical mechanism with the Person model. We have similarly defined the fields. 
+      The field types are assigned using specific classes, which determine the type of record that is used to store the data in the database, along with validation criteria to be used when values are received from an HTML form. The Review Model in <code> models.py </code> is presented in the figure below with its constituent fields:
+
+         </p>
+         <div class="row">
+        <img src="img/implementation/reviewmodel1.png" alt="Evaluation"  width="50%" >
+         <img src="img/implementation/reviewmodel2.png" alt="Evaluation"  width="50%" >
+         </div>
+         <pre><div class="caption">   Fig. Review Model Part 1 in models.py                               Fig. Review Model Part 2 in models.py</div>
+            </pre>
+
+        <p>In the Review model we defined fields such as the link to the project being reviewed, defined as a Foreign Key to the Person model, reviewer's details and the comments based on specific criteria, of type <code>models.CharField</code>. We also added fields of types <code> models.IntegerField </code> that allowed us to define the scores the reviewer
+         can give for the 7 criteria. In order to compute the scores appropriately, we overrode the save() method, so that when a reviewer opts for a certain score from the 0 to 5 options of the radio boxes provided under each criterion, the system will save the raw score up to 5 in criterion_namePoints field, but will also convert the points on a scale up to 100 
+         and saves the mathematical calculation in criterion_namePoints100 when submitting the form. Similarly, the saving is done automatically with the load and submission of the review form and the fields <code> self.points </code> will store the summation of the seven scores, up to a total of 35, and <code> self.score </code> will convert this sum on a scale from 0 to 100, through the rule of three.
+        </p>
+
+        <p> Besides, there are three more models, namely AcceptedProjects, RejectedProjects, and UnderReviewProjects, which contain a foreign key, one-to-one field towards the Person model. The models are listed below: </p>
+
+        <div class="row">
+        <img src="img/implementation/accepted.png" alt="Evaluation"  width="33%" >
+         <img src="img/implementation/rejected.png" alt="Evaluation"  width="33%" >
+         <img src="img/implementation/underreview.png" alt="Evaluation"  width="33%" >
+         </div>
+         <pre><div class="caption">Fig. AcceptedProjects Model         Fig. RejectedProjects Model                    Fig. UnderReviewProjects Model</div>
+            </pre>
+
+            <p> The users can export the projects' details along with their respective submitter's information in the form of CSV files by pressing the specific button in the home page, the project grid and list. 
+            [TO DO: EXPLAIN BRIEFLY THE CODE FOR EXPORT()]
+            </p>
+            
+           <center><img src="img/implementation/exportviews.png" alt="Evaluation" width="700" height="200" ></center>
+     <pre><div class="caption">                    Fig. export() method in views.py                        </div>
+            </pre>
+       
+
+    
      [talk about ER relationships]
 <hr>
-     <h4> Authentication and Permissions - django </h4>
+     <center><h4> Authentication and Permissions  </h4></center>
+      <h5><span class="badge badge-warning"> Django  </span></h5>
+     <p> There are three types of authenticated permission users, namely submitters, reviewers and approvers. As admin, we were able to log in the Django system's database and configure the Group's permissions. </p>
+     <center><img src="img/implementation/groups.png" alt="Evaluation"  width="500px" ></center>
+       <pre><div class="caption">             Fig. Group Permissions in admin   </div></pre>
+      <br>
+       <div class="row">
+        <img src="img/implementation/approver.png" alt="Evaluation"  width="33%" >
+         <img src="img/implementation/reviewer.png" alt="Evaluation"  width="33%" >
+         <img src="img/implementation/submitter.png" alt="Evaluation"  width="33%" >
+         </div>
+         <pre><div class="caption">Fig. AcceptedProjects Model         Fig. RejectedProjects Model                    Fig. UnderReviewProjects Model</div>
+            </pre>
+            <p> The code we employed for writing the permissions bases on filtering the user.groups [TO DO: EXPLAIN MORE]</p>
+             <center><img src="img/implementation/groupviews.png" alt="Evaluation" width="700" height="400" ></center>
+     <pre><div class="caption">                    Fig. Group Users methods in views.py                        </div>
+            </pre>
 <hr>
      
 <hr>
-     <h4> Deployment </h4>
-     <h5> Sharepoint </h5>
+     <center><h4> Deployment </h4></center>
+     <h5><span class="badge badge-warning"> SharePoint  </span></h5>
      </p> The flows described above can be exported as a zip, which can be imported into another organisation's SharePoint site by importing the zip file and changing the connections. The connections can then be changed to the appropriate lists and users and deployed within 
      an organisation's own SharePoint site. This is explained in the deployment video in the Appendicies.
 
      </p> The lists can be replicated within a SharePoint organisation site by running the site script provided. This will need to be done by the adminstrator of the organisation's Sharepoint. The site design can then be applied to the 
      site and this creates the lists
      with the correct formating and styling, which can then be appended to pages and integrated into an existing SharePoint site.
-     
-     <h5> Django: TODO </h5>
+     </p>
+      <h5><span class="badge badge-warning"> Django  </span></h5>
 
-    
+    <p>
+      In order to deploy the Django web portal properly, open two bash terminals (one for the local server and one for the remote) - the commands will be alternative. 
+
+      Set up a LINODE account (we used Linode for our cloud computing and web hosting service). The IP address of the REMOTE website can be found in the Network tab under the IP addresses or via the SSH Access.
+      We will use Ubuntu for the operating system needed to deploy the web portal. The series of instructions and their explanations are provided step-by-step in the Django Deployment Manual that can be found in the Appendices section.
+    </p>
 
     
      
