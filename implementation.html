@@ -382,7 +382,9 @@
             </pre>
 
             <p> The users can export the projects' details along with their respective submitter's information in the form of CSV files by pressing the specific button in the home page, the project grid and list. 
-            [TO DO: EXPLAIN BRIEFLY THE CODE FOR EXPORT()]
+            The function sets up a csv file in the media URL we have specififed and initialises a writer. This writer then iterates through the entries in the database 
+            and writes it to the csv. 
+
             </p>
             
            <center><img src="img/implementation/exportviews.png" alt="Evaluation" width="700" height="200" ></center>
@@ -391,7 +393,7 @@
        
 
     
-     [talk about ER relationships]
+     =
 <hr>
      <center><h4> Authentication and Permissions  </h4></center>
       <h5><span class="badge badge-warning"> Django  </span></h5>
@@ -406,8 +408,10 @@
          </div>
          <pre><div class="caption">Fig. AcceptedProjects Model         Fig. RejectedProjects Model                    Fig. UnderReviewProjects Model</div>
             </pre>
-            <p> The code we employed for writing the permissions bases on filtering the user.groups [TO DO: EXPLAIN MORE]</p>
-             <center><img src="img/implementation/groupviews.png" alt="Evaluation" width="700" height="400" ></center>
+            <p> The code we employed for writing the permissions bases on filtering the user.groups. The methods check what type of user the request user is, and the views are limited based on the result of the method. 
+            By adding <code> @is_reviewer </code> to the top of a view method, this allowed only users which passed the boolean method to execute that view method and render the html. Therefore, submitters cannot access the review portal 
+            even if they input the url into their browser, as the view could not be accessed by them. </p>
+             <center><img src="img/implementation/groupviews.png" alt="Evaluation" width="700"></center>
      <pre><div class="caption">                    Fig. Group Users methods in views.py                        </div>
             </pre>
 <hr>

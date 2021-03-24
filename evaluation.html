@@ -146,6 +146,12 @@ tr:nth-child(even) {
     <th>Medium</th>  
   </tr>
 
+  <tr>
+    <th>Submission portal start process button was not showing on the screen for a 2010 iMac using Safari as a browser. All other elements could be vieweed. </th>
+    <th>Django</th>
+    <th>High</th>  
+  </tr>
+
   </table>
   </p>
   <hr>
@@ -292,6 +298,11 @@ Tester, Report Website Editor</td>
         account solely for our system, and would have allowed them to use their pre-exisiting account. We were unable to implement this due to 
         lack of time, but in the future I think this would have increased compatibility of the Django system with many different organisations, as they could have integrated their
         pre-existing credentials with our system.
+    </p>
+        Moreover, in the Django testing revealed that some elements of our system were not rendered by our browser and were not being displayed. For instance, a user using a 2010 iMac using Safari could not view the submission portal. I think in the future, it would be better
+        if we could test our system on multiple operating systems and devices as all three team members use a relatively new MacOS laptop, and so may not be an accurate representation of the systems which are used in organisations such as a NHS 
+        which may have a large variety of different systems in terms of operating system, model and age. In the future, we would have preferred to test the compability of our system thoroughly and also have formatted it to be 
+        usable on mobile devices, as currently it is only formatted correctly using a laptop. Many users may not necessarily use a laptop for this feature, and so in the future it would be good to develop this for mobile devices too. 
 
 
 
@@ -300,12 +311,20 @@ Tester, Report Website Editor</td>
 The SharePoint system is very easy to maintain due to the robustness of the system. Power Automate handles the majority of the back-end and is well maintained by Microsoft. If a flow failed, the owner would receive emails alerting them of
 this as well as the source of the error. As a result, any bugs can be easily fixed or improvements can be made easily to flows. However, any bugs found in the execution of the flows or the lists may be more difficult to fix due to the inability 
 to change the internal structure of these as a regular user. If these bugs persist, a problem is that you will have to depend on Microsoft to fix these issues internally.
-
+</p>
         <h5> Project management [TODO]  </h5>
         
         <hr>
-        <h3> Future work </h3>
-        <p> How could the project be extended if you have more time</p>
+        <h3> Future work [TODO]  </h3>
+        
+        There are multiple things we wanted to implement and progress further, however could not due to lack of time. For example:
+        <li> Include a single sign on (SSO) option for the Django implementation so users can integrate their pre-exisiting accounts to the system, preventing the need to create a new account from scratch </li>
+        <li> Greater front-end styling and implementation for the SharePoint solution so it can be integrated into the site with this styling.</li>
+        <li> Functionality in both system for users to subscribe to the system. <li>
+        <li> More advanced querying in the django and a more sophisticated technique of database storage </li>
+        <li> Implement ML/AI solutions to provide suggestions of project proposals based on previous projects, as well prompting users for possible tags they could use. <li>
+
+
         
     
      
