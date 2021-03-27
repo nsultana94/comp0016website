@@ -104,7 +104,7 @@
         </p>
         It is worth noting that current project proposal engines offer a design editor that allows its users to graphically represent their proposal 
         in an artistic and attractive manner, however, in our implementation, due to the simplistic and easy-to-use user requirement, we decided that 
-        it was better to be entirely handled by forms.
+        it was better for data collection to be entirely handled by forms.
         </p>
         3 project proposal platforms are outlined below.
         </p>
@@ -121,7 +121,11 @@
       <p>
         The link to their website: <a href="betterproposals.io">Better Proposals</a>
       </p>
+      <center>
       <img src="img/research/betterproposals.jpg" alt="betterproposals" style="width: 900px" >
+      <div class="caption" align="center"><h6>Fig. Better Proposals Example Dashboard</h6></div>
+      </center>
+    </p>
         <h5> Features </h5>
         <ul>
             <li> "Automatic Designer" page allows users to easily create attractive proposals in minutes</li>
@@ -145,7 +149,11 @@
      <p>
         The link to their website: <a href="www.bidsketch.com">Bidsketch</a>
       </p>
-      <img src="img/research/bidsketch.png" alt="bidsketch" style="width: 900px" >
+      <center>
+      <img src="img/research/bidsketch.png" alt="bidsketch">
+      <div class="caption" align="center"><h6>Fig. Bidsketch Example Dashboard</h6></div>
+    </center>
+    </p>
      <h5> Features </h5>
         <ul>
             <li> Provides a large template library for users to cut proposal time in half </li>
@@ -166,7 +174,10 @@
         <p>
         The link to their website: <a href="www.qwilr.com">Qwilr</a>
         </p>
-        <img src="img/research/qwilr.jpg" alt="bidsketch" style="width: 900px" >
+        <center>
+        <img src="img/research/qwilr.jpg" alt="bidsketch">
+        <div class="caption" align="center"><h6>Fig. Qwilr Example Dashboard</h6></div>
+        </center>
         <h5> Features </h5>
         <ul>
             <li> Provides a designer editor which easily allows users to create polished documents using modular design blocks </li>
@@ -189,14 +200,67 @@
         <h3> Technology Review</h3>
         <h4> Possible Solutions </h4>
         <p>
-          Please compare the possible solutions, describe what you choose, and explain why. 
-          Please compare the possible programming languages, frameworks, libraries, APIs, describe what you choose, and explain why.
-          Please compare the possible devices, describe what you choose, and explain why.
+          <ul>
+            <li> We could potentially have implemented a solution to our project using Workzone's project management software. Their system ensures secure file sharing,
+              approvals workflow, comment features and task sharing. [4]
+            </li>
+          </p>
+            <li>
+              Another option was to use the basic but very powerful web development tool, Wix. It provides document storage and focuses on the web development space, providing us
+              with freedom to design the page exactly as desired. In addition to this, a team can collaborate on building the site.[5]
+            </li>
+          </p>
+            <li>
+              Glasscubes, which markets itself as a SharePoint alternative, is a powerful project management software. It differentiates itself by claiming to focus on simplicity 
+              in both setup and usability. It provides a broad range of collaboration features, such as file sharing, project management, customisable workspaces and more.[6]
+            </li>
+          </p>
+            <li>
+              Confluence is a collaboration software that aims to create a centralised workspace. Its focus is on providing users with a large collection of templates that allow
+              users to being working quickly and efficiently. It is also worth noting that Confluence can be combine with its sister product, Jira Software, a software development tool
+              that helps teams plan, track and report on work. [7]
+            </li>
+          </p>
+          </ul>
+          <h4> Possible Web Development Tools </h4>
+        </p>
+          <ul>
+            <li>
+              Flask, a micro web framework written in Python, can be used to build a web application. Pre-existing third party libraries provide the developer with the ability to 
+              implement a complex and dynamic website.[8]
+            </li>
+          </p>
+            <li>
+              Web2py is a free open source full-stack framework for rapid dedvelopment of fast, scalable, secure and portable databse-driven web-based applications. It is compatible
+              with most database systems and easy to set up.[9]
+            </li>
+          </p>
+            <li>
+              Angular, a TypeScript-based open source web application framework allows users to build apps for web, mobile web, native mobile and native desktop. Its features which 
+              will be useful for our system include templating, RESTful API handling and two-way binding. [10]
+            </li>
+          </p>
+            <li>
+              ReactJS, arguably the most popular Javascript application framework, allows users to create large web applications. These dynamic pages, can change data without 
+              reloading the page. [11]
+            </li>
+          </ul>
+        
         </p>
         <h4> We chose: </h4>
         <p>
-          Explain why we chose sharepoint and django vs other implementations
+          <h5>Microsoft Sharepoint</h5>
+          Sharepoint was chosen as the solution of choice due to its integration with the Microsoft environment. After conducting several meetings with our clients,
+          it was evident that their systems along with UCL's relied on Microsoft. Because of this, it was the perfect choice, as our finished product would be able to
+          seamlessly integrate with our clients and the deployment of our solution would not cause any issues. Furthermore, as this project would be in collaboration with the 
+          UCL IXN Programme, our system would be ideal for the main users of our system, the UCL IXN team, whose environment mainly relies on Microsoft systems.
         </p>
+        <h5> Django </h5>
+          Django was chosen as the framework of choice for the public version of our Portal Engine due to influence from our clients, similar to Microsoft Sharepoint. Although there were 
+          many other options as outlined above in the "Possible Web Development Tools", we felt that, with agreement from our NHS client, Django provided us with all the necessary tools and
+          technologies required to build our dynamic and complex database-driven web application. Furthermore, it was useful that this implementation was in Python, as it was a language
+          we felt comfortable with, having went through a module in the first-year of our degree which focused on this programming language.
+      </p>
         <h4> Summary of Technical Decisions</h4>
         <p>
         After careful consideration, our team decided to develop 2 separate implementations that provide the same functionalities.
@@ -216,6 +280,11 @@
         <li> [1] www.betterproposals.com [Website] Available: Online [Accessed: November 11, 2020]</li>
         <li> [2] www.bidsketch.com [Website] Available: Online [Accessed: November 11, 2020]</li>
         <li> [3] www.qwilr.com [Website] Available: Online [Accessed: November 11, 2020]</li>
+        <li> [4][5] www.workzone.com/blog/sharepoint-alternatives [Website] Available: Online [Accessed: November 12, 2020]</li>
+        <li> [6][7] www.clearpointstrategy.com/alternatives-to-sharepoint [Website] Available: Online [Accessed: November 13, 2020]</li>
+        <li> [8][9] www.g2.com/products/django/competitors/alternatives [Website] Available: Online [Accessed: November 13, 2020]</li>
+        <li> [10][11] www.paperform.co/blog/web-development-tools [Website] Available: Online [Accessed: November 13, 2020]</li>
+        
       </ul>
       
       
