@@ -23,18 +23,37 @@
 
 </head>
 
+<style>
+table {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: 	#F5F5F5;
+}
+</style>
+
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="width:100%; ">
     <div class="container">
-      <a class="navbar-brand" href="index.html">CFP Portal Engine</a>
+      <a class="navbar-brand" href="index.html" style=" margin-left:-100px; background: rgba(0,0,0,0.4); color: white">CFP Portal Engine</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto"  >
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
@@ -65,8 +84,11 @@
           <li class="nav-item">
             <a class="nav-link" href="evaluation.html">Evaluation</a>
           </li>
-          <li class="nav-item">
+           <li class="nav-item">
             <a class="nav-link" href="appendices.html">Appendices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="appendices.html">Development Blog</a>
           </li>
           
         </ul>
@@ -75,7 +97,7 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-color:#006d5b">
+  <header class="masthead" style="background:url('img/implementation/greenish.jpg') top right repeat-x;  background-size: cover;   ">
     <div class="overlay"></div>
     <div class="container" >
       <div class="row">
@@ -88,12 +110,26 @@
       </div>
     </div>
   </header>
-
+  <br>
   <!-- Main Content -->
   <div class="container"  style="text-align:justify">
     <div class="row">
       <div class="container-md">
-      <h3> Project Background </h3>
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Project Background</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
         <p>The existing IXN scheme used Microsoft Forms to collect potential projects for students to develop. Therefore, 
         there was limited functionality in terms of organisation of data and collection of the projects. As a result, the CFP Portal Engine was required to be developed.
         A system which uses existing IXN functionality such as the Microsoft form to efficiently collect and organise data 
@@ -106,7 +142,23 @@
         UCL will primarily use this system for the collection of projects for the IXN program, and will deploy the system over the UCL intranet as all students enrolled in this program 
         will have access.
         </p>
-        <h5> Client Introduction </h5>
+        <br>
+        <hr>
+         <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Client Introduction</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
         Microsoft and IBM intend to use this system for the collection of projects within their own company, and ease of providing students with the opportunity
         to collaboratively create and develop solutions for current technological issues. This will not only improve relationships between clients and students who
         will eventually enter the industry but will also allow students to showcase their talents and highlight their ability in the field of computer science.
@@ -115,9 +167,24 @@
         it is an extremely valuable resource to have university students working and prototyping on projects that have the ability to solve current medical issues
         within the NHS. Providing students with project briefs to work on is multiple times quicker than approving a project through the usual channels,
         due to the sheer size of the national health organisation.  
+        </p>
 
-     <hr>
-      <h3> Project Goals </h3>
+     <br><hr>
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Project Goals</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       <p> </p> 
 
       <ul>
@@ -128,20 +195,67 @@
      <li> Seamless userflow with no ambiguities </li>
 
       </ul>
+      <br>
    <hr>
-      <h3> Requirement gathering </h3>
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Requirement Gathering</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
       <p> We conducted a series of virtual semi-structured interviews via audio-video calls through platforms like Zoom or Microsoft Teams and discussed permanently throughout email in order to schedule the meetings, to ask some follow-up questions or rise our concerns in terms of the desired 
       requirements versus the materials and time we had or just different sides of a perspective. </p>
-      <h4> Gathering user requirements </h4>
+      <br><hr>
+       <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Gathering User Requirements</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       <p> We designed some Google forms and surveys which helped us assess the external requirements and necessities as pointed out by users of different age categories, backgrounds, technical exposure, user interface needs etc. </p>
       </p> Main requirements is an easy-to-orientate, user-friendly interface.
     </p> We believed in equipping our platform with the common features as discovered throughout the process of gathering requirements. We found it important to include characteristics like making the portal an open-source tool so that outside people can gain easy access to this open marketplace where successful project proposals are collected and displayed.
     </p> Another similar aspect was to include a structured easy-to-orientate, user-friendly interface through which users can smoothly follow the instructions, tick the mandatory and optional boxes with the steps before uploading a project, have the option to edit their application or personal information and see the progress throughout filling in an application form as well as the general overview when their application has been satisfactorily completed. 
     unfiNISHED!!!
+    </p><br>
 <hr>
 
 <!-- Personas and Scenarios -->
-      <h3> Personas and Scenarios </h3>
+
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Personas and Scenarios </h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
       <p> After interviewing various types of users that may use our system, we created personas in order to gather information from the users about the key features they were interested in from our system. The clients gave clear ideas of what they wanted to obtain from the system, but it was important to consider the opinion of general public as ultimately, they would be the main users of the program.  
       </p> Typical users would be people within a company who would submit projects to be reviewed as well as the company's internal reviewing committee who would be responsible for
@@ -204,36 +318,76 @@
 
 </p>Using these ideas from the scenarios and interviews we started a user-centered approach in designing the initial sketches of the system, iterating the process multiple times in order to obtain the optimal design for a user-friendly system. </p>
 </p>
-<h3> Use Cases </h3>
-<h4> Use Case Diagram</h4>
+<br><hr>
+  <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Use Cases</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:880px;font-size:20px"> Use Case Diagram</h4>
 <center>
 <img src="img/usecase/usecasediagram.png" alt="usecasediagram" style="width:700px;height:600px;">
 <div class="caption" align="center"><h6>Fig. Use Case Diagram</h6></div>
 </center>
-<h4> List of use cases</h4>
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:890px;font-size:20px"> List of Use Cases</h4>
 <p>
   The Use Cases List for both implementations are as shown below. Please select the button below each table to view the descriptions for each use case.
 </p>
-<h5> Sharepoint </h5>
-<img src="img/usecase/usecasesharepoint.png" alt="usecasesharepoint" >
-<p>
-<a href="https://docs.google.com/spreadsheets/d/1wuvK_Q9X1LqNCab8IaCOAjP71eiIrFiGmkqbySUwuu0/edit?usp=sharing" class="btn btn-primary">Sharepoint Use Case Description</a>
-</p>
-<h5> Django</h5>
-<img src="img/usecase/usecasedjango.PNG" alt="usecasedjango" >
-<p>
-  <a href="https://docs.google.com/spreadsheets/d/1PWt95lEGo8C2nSB8YIt0t0enpwkouzFtZbOdoA1jzJA/edit?usp=sharing" class="btn btn-primary">Django Use Case Description</a>
-</p>
-
-
+<h6 style="background:url('img/implementation/greenish.jpg');color:white; text-align:center;padding:10px; font-size:18px"> SharePoint</h6>
+<br>
+<div class="row">
+<div class="col">
+<img src="img/usecase/usecasesharepoint.png" alt="usecasesharepoint" ></div>
+<div class="col" style="padding:100px">
+<a href="https://docs.google.com/spreadsheets/d/1wuvK_Q9X1LqNCab8IaCOAjP71eiIrFiGmkqbySUwuu0/edit?usp=sharing" class="btn btn-outline-dark" >Sharepoint Use Case Description</a>
+</div>
+</div>
+<br><br>
+<h6 style="background:url('img/implementation/greenish.jpg');color:white; text-align:center;padding:10px; font-size:18px"> Django</h6><br>
+<div class="row">
+<div class="col"><img src="img/usecase/usecasedjango.PNG" alt="usecasedjango" ></div>
+<div class="col" style="padding:200px">
+  <a href="https://docs.google.com/spreadsheets/d/1PWt95lEGo8C2nSB8YIt0t0enpwkouzFtZbOdoA1jzJA/edit?usp=sharing" class="btn btn-outline-dark">Django Use Case Description</a>
+</div>
+</div>
+<br>
+<hr>
 <!-- MOSCOW LIST -->
 <hr>
-      <h3> MoSCoW requirements </h3>
+      <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">MoSCoW Requirements</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       &nbsp;
-      <h4> Functional Requirements</h4>
-     <img src="img/moscow/func.PNG" alt="functional">
-     <h4> Non-functional requirements</h4>
-     <img src="img/moscow/nonfunc.PNG" alt="non-functional">
+      <br>
+<h6 style="background:url('img/implementation/greenish.jpg');color:white; text-align:center;padding:10px; font-size:18px"> Functional Requirements</h6><br>
+
+    <center> <img src="img/moscow/func.PNG" alt="functional"></center><br><br>
+     <h6 style="background:url('img/implementation/greenish.jpg');color:white; text-align:center;padding:10px; font-size:18px"> Non-functional Requirements</h6><br>
+
+      <center><img src="img/moscow/nonfunc.PNG" alt="non-functional"> </center>
 
       </ul>
       </div>
