@@ -23,21 +23,41 @@
 
 </head>
 
+<style>
+table {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: 	#F5F5F5;
+}
+</style>
+
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="width:100%; ">
     <div class="container">
-      <a class="navbar-brand" href="index.html">CFP Portal Engine</a>
+      <a class="navbar-brand" href="index.html" style=" margin-left:-100px; background: rgba(0,0,0,0.4); color: white">CFP Portal Engine</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto"  >
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          
           
           <li class="nav-item">
             <a class="nav-link" href="requirements.html">Requirements</a>
@@ -64,9 +84,11 @@
           <li class="nav-item">
             <a class="nav-link" href="evaluation.html">Evaluation</a>
           </li>
-          </li>
            <li class="nav-item">
             <a class="nav-link" href="appendices.html">Appendices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="appendices.html">Development Blog</a>
           </li>
           
         </ul>
@@ -75,13 +97,13 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-color:#006d5b">
+  <header class="masthead" style="background:url('img/implementation/greenish.jpg') top right repeat-x;  background-size: cover;   ">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h3>UI Design</h3>
+            <h1>UI Design</h1>
             <span class="subheading"> User interface design</span>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
@@ -97,30 +119,64 @@
       <div class="container-sm">
         
         <hr>
-        <h3> Sketches</h3>
+          <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Sketches</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
         </p>
         <p> Upon gathering users’ requirements, creating personas and envisaging scenarios, we designed several wireframe sketches that will smoothen the transition to a higher-fidelity, interactive prototype.W
          </p> We considered the possible idea of a timeline or a checklist system, so it was easy to track each stage of the application process and so the users are not overwhelmed by a large form of information. We iterated this process of multiple sketches in order to obtain various designs. The use of
          a timeline also made it clear to users what stage of the submission they were at and hence maintained the affordance of the program.
         </p>
-         <img src="img/sketches/1.jpeg" alt="Sketches" style="width:700px;height:400px;">
-         <div class="caption">Submission Portal Sketches</div>
+        <center> <img src="img/sketches/1.jpeg" alt="Sketches" style="width:700px;height:400px;">
+         <div class="caption">Submission Portal Sketches</div></center>
         </p> The sketches above tried to encompass a user-friendly interaction which make the user experience easy to follow and a fluid process. We felt the submission portal was an integral part of the user experience.
         </p>
-        <img src="img/sketches/3.jpeg" alt="Sketches" style="width:600px;height:400px;">
-        <div class="caption">Feedback System Sketches</div>
+       <center> <img src="img/sketches/3.jpeg" alt="Sketches" style="width:600px;height:400px;">
+        <div class="caption">Feedback System Sketches</div></center>
 
         </p> We designed multiple sketches for the reviewing system considering a red-amber-green system for feedback as well as a point-based system. Users expressed they liked the red-amber-green method with a combination of point based as it allowed easy comparison of projects. This increased
         the visibility of the system which is an important design principle to consider, as it made it clear what the button's functionality was. It would also help the user experience by clearly highlighting what the RAG buttons were doing as well as the points and so it gave good feedback to the user
         of what functionalities they had as a user.
         </p>
 
-
+        <br>
         <hr>
         
         
 
-        <h3> Prototype </h3>
+        <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Prototype</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <p>
          Using our sketches, we produced a prototype in figma.com to illustrate the webapp framework and emphasise the usability and feasibility of the finished portal engine.​
@@ -136,18 +192,35 @@
       We discussed possible areas of improvement and areas of success for our prototype, and organised them in the table below. 
       </p>
       
- <img src="img/personas/evaluation.png" alt="Evaluation" style="width:600px;height:400px;">
+ <center><img src="img/personas/evaluation.png" alt="Evaluation" style="width:600px;height:400px;"></center>
 </p>
-
-      <h5> Prototype demo </h5>
+    <br><hr>
+         <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Interactive Prototype Demo</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       </p>  </p>
       </p>
-   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLZ5J5czMBmID95ImfYA0kN%2FIXN-CFP-Portal-Engine%3Fnode-id%3D16%253A4382%26scaling%3Dscale-down" allowfullscreen></iframe>
-<div class="caption">Improved prototype of CFP Project Proposal Portal</div>
+   <center><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLZ5J5czMBmID95ImfYA0kN%2FIXN-CFP-Portal-Engine%3Fnode-id%3D16%253A4382%26scaling%3Dscale-down" allowfullscreen></iframe>
+<div class="caption">Improved prototype of CFP Project Proposal Portal</div></center>
 
       </p> The prototype now highlighted the main functionality of the system; hence we were able to start designing the architectural design of the system and to start thinking of possible methods of implementation. 
       It highlights the usability and simplicity of the user interface, with clear buttons and a numbered system to navigate the submission process.  </p>
-        <hr>
+      
        
         
         <!-- Pager -->
@@ -156,44 +229,62 @@
     </div>
   </div>
   &nbsp;
-  <hr class="rounded">
+  <hr >
   
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
+  <footer style="display:block; background:url('img/implementation/greenish.jpg') top right repeat-y;  background-size: cover; width:1442px; height:400px; margin-left:-197px; margin-bottom:0px;  padding:20px">
+   
+   
+    <div class="container" >
+
+      <center> <h2 style="color:rgba(255,255,255,0.7)">Team 27</h2></center><br>
+
+      <div class="row" style="width:1445px; background-color:white; margin-left:-170px; padding:20px">
+        <div class ="text-center">
+        <ul class="list-inline text-center" text-center>
+
+            <li class="list-inline-item text-center">
+            <div class="col">
+         <center><img src="img/footer/ucl2.jpg"  style="width: 200px;margin-left:200px" align:"center"></img> </center>
+          </div></li>
+
+           <li class="list-inline-item">
+           <div class="col">
+           <center><img src="img/footer/nhs.png" style="width:150px"></img> </center>
+          </div></li>
+
+          <li class="list-inline-item">
+           <img src="img/footer/ibm.png" style="width: 110px"></img>
+          </li>
+
+           <li class="list-inline-item">
+            <div class="col">
+          <img src="img/footer/microsoft.jpg"  style="width: 220px"></img>
+          </div></li>
+
+           <li class="list-inline-item">
+            <div class="col">
+          <img src="img/footer/ixn.png"  style="width: 150px"></img>
+          </div></li>
+
+          </ul>
+         </div>
+          </div>
+          
+          
+
+        <br><br>
+
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
+        
+           <center> <h4 style="color:rgba(255,255,255,0.5)">COMP0016, 2020-21</h4></center>
           <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
         </div>
       </div>
     </div>
+    
   </footer>
 
   <!-- Bootstrap core JavaScript -->
