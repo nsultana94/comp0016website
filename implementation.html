@@ -20,22 +20,40 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
- 
 
 </head>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: 	#F5F5F5;
+}
+</style>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="width:100%; ">
     <div class="container">
-      <a class="navbar-brand" href="index.html">CFP Portal Engine</a>
+      <a class="navbar-brand" href="index.html" style=" margin-left:-100px; background: rgba(0,0,0,0.4); color: white">CFP Portal Engine</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto"  >
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
@@ -69,6 +87,9 @@
            <li class="nav-item">
             <a class="nav-link" href="appendices.html">Appendices</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="appendices.html">Development Blog</a>
+          </li>
           
         </ul>
       </div>
@@ -76,7 +97,8 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-color:#006d5b">
+  <header class="masthead" style="background:url('img/implementation/greenish.jpg') top right repeat-x;  background-size: cover;   ">
+  
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -98,7 +120,22 @@
       
       <p> 
 
-      <center><h3> Overview of the System Implementation</h3></center>
+      <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Overview of the System Implementations</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
       <br>
       <h4> <span class="badge badge-warning">The SharePoint Platform</span></h4>
         <p>
@@ -128,16 +165,47 @@
 
         </p>
 
-        <p>
-        Further details about the implementation of the project and the technical flows of the instructions are presented below. The user manual can also be provided.
-        </p>
+       
        
 
         
      <hr> 
-      <center><h3> Key Features </h3></center>
+      <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Key Features</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <p>
+        Further details about the implementation of the two systems and the technical flows of the instructions are presented below. The user manuals are also provided.
+        </p>
+        <br>
     &nbsp;
-      <center><h4> Submission Portal and display of projects</h4></center>
+      <hr> 
+      <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white"> Submission Portal and display of projects</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       &nbsp;
       <h5> <span class="badge badge-warning"> SharePoint </span></h5>
 
@@ -213,9 +281,25 @@
      </p>
 
 
-
+<br>
 <hr>
-     <center><h4> Reviewing Projects and giving feedback </h4></center>
+  
+      <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white"> Reviewing Projects and giving feedback </h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
 
      <h5> <span class="badge badge-warning">SharePoint</span> </h5>
      <br>
@@ -284,7 +368,21 @@
       </p>
 
 <hr>
-   <center> <h4> Approval of projects</h4></center>
+     <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white"> Approval of Projects </h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
       <h5><span class="badge badge-warning">SharePoint  </span></h5>
       </p> Another button is displayed in the sharepoint list, if the status of the project is neither accepted nor rejected. This button can be triggered by any reviewer once all feedback has been sent, to send an email to the 
       approver of the project, giving details of the project, the feedback, the RAG ratings and list of reviewers. This starts a Microsoft Approval process, where the approver can accept or reject the project through that and this will
@@ -312,7 +410,21 @@
 
 
 <hr>
-    <center> <h4> Storage of data - Databases </h4></center>
+       <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white"> Data Storage - Databases </h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
       <h5><span class="badge badge-warning">SharePoint  </span></h5>
      </p> The lists can be exported with a query or without a query as a CSV file by clicking the export button that is built into the SharePoint lists. The accepted projects and project proposals 
      are also stored in an Excel sheet, stored in the document library of the SharePoint site. The feedback data is also stored in the Excel sheets, which can be mined by companies to show feedback from different individuals.
@@ -395,7 +507,22 @@
     
      
 <hr>
-     <center><h4> Authentication and Permissions  </h4></center>
+   <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white"> Authentication. Permissions. Users </h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     <br>
       <h5><span class="badge badge-warning"> Django  </span></h5>
      <p> There are three types of authenticated permission users, namely submitters, reviewers and approvers. As admin, we were able to log in the Django system's database and configure the Group's permissions. </p>
      <center><img src="img/implementation/groups.png" alt="Evaluation"  width="500px" ></center>
@@ -417,7 +544,21 @@
 <hr>
      
 <hr>
-     <center><h4> Deployment </h4></center>
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white"> Deployment </h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
      <h5><span class="badge badge-warning"> SharePoint  </span></h5>
      </p> The flows described above can be exported as a zip, which can be imported into another organisation's SharePoint site by importing the zip file and changing the connections. The connections can then be changed to the appropriate lists and users and deployed within 
      an organisation's own SharePoint site. This is explained in the deployment video in the Appendicies.
