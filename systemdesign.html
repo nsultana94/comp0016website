@@ -23,27 +23,47 @@
 
 </head>
 
+<style>
+table {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: 	#F5F5F5;
+}
+</style>
+
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="width:100%; ">
     <div class="container">
-      <a class="navbar-brand" href="index.html">CFP Portal Engine</a>
+      <a class="navbar-brand" href="index.html" style=" margin-left:-100px; background: rgba(0,0,0,0.4); color: white">CFP Portal Engine</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto"  >
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          
           
           <li class="nav-item">
             <a class="nav-link" href="requirements.html">Requirements</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Research</a>
+            <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Design</a>
@@ -62,25 +82,28 @@
             <a class="nav-link" href="testing.html">Testing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Evaluation</a>
+            <a class="nav-link" href="evaluation.html">Evaluation</a>
           </li>
-          </li>
-          <li class="nav-item">
+           <li class="nav-item">
             <a class="nav-link" href="appendices.html">Appendices</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="appendices.html">Development Blog</a>
+          </li>
+          
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-color:#006d5b">
+  <header class="masthead" style="background:url('img/implementation/greenish.jpg') top right repeat-x;  background-size: cover;   ">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h3>System Design</h3>
+            <h1>System Design</h1>
             <span class="subheading">System design, architecture and user flow</span>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
@@ -99,7 +122,24 @@
 
         
 
-        <h3> System Design</h3>
+         <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">System Design</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <p>
             Although we had a good understanding of the main functionality of the system, 
@@ -125,89 +165,208 @@
         </p> 
         A diagram is presented in Figure 1 highlighted the movement of data between the different components to show a basic overview of the architectural design of the overall system. 
         </p>
-        <img src="img/design/design1.png" alt="Evaluation" style="width:700px;height:200px;">
-        <div class="caption">Overall brief system architecture</div>
+        <center><img src="img/design/design1.png" alt="Evaluation" style="width:700px;height:200px;">
+        <div class="caption">Fig. Overall brief system architecture</div></center>
+        <br>
         <hr>
-        <h3> Data Flow </h3>
-        <img src="img/design/userflow.png" alt="UserFlow" style="width:800px;height:600px;">
-        <div class="caption">Diagram of data flow</div>
-        <h3> User Flow </h3>
-        <img src="img/design/userflowdiagram.png" alt="UserFlow" style="width:800px;height:600px;">
+         <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Data Flow</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+       <center> <img src="img/design/userflow.png" alt="UserFlow" style="width:800px;height:600px;">
+        <div class="caption">Fig. Diagram of data flow</div></center>
 
-        <h3> Sharepoint Architecture </h3>
+        <br><hr>
+
+          <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">User Flow</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <center> <img src="img/design/userflowdiagram.png" alt="UserFlow" style="width:800px;height:600px;">
+       <div class="caption"> Fig. Diagram of user flow </div></center>
+
+<br><hr>
+         <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">SharePoint Architecture</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <p> The diagram below represents the overall system architecture of the sharepoint website, which illustrates the use of power automate for data flows and processes such as reviewers leaving feedback as well as the storage of data and the use of Microsoft Approvals for the approval stage of the IXN CFP portal.
-        <img src="img/implementation/systemarchitecturesharepoint.png" alt="Evaluation" >
-        <div class="caption">Sharepoint System Architecture</div>
+        <br><p></p>
+       <center> <img src="img/implementation/systemarchitecturesharepoint.png" alt="Evaluation" >
+        <div class="caption">Fig. SharePoint System Architecture</div></center>
+        <br><hr>
 
-        <h3> Django Architecture </h3>
+          <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Django Architecture</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <p> The diagram below shows the overall django structure with the django server and the inbuilt SQL lite database, as well as bootstrap, javascript and CSS for the front end technology.
-        <img src="img/implementation/systemarchitecturedjango.jpg" alt="Evaluation">
-        <div class="caption">Django System Architecture</div>
+       <p></p>
+       <center> <img src="img/implementation/systemarchitecturedjango.jpg" alt="Evaluation">
+        <div class="caption">Django System Architecture</div></center>
 
-        
+        <br><hr>
 
-        <h4> Site map for Django </h4>
-        <h6> Site map for Django Reviewers </h6>
-        <img src="img/implementation/reviewersitemap.png" alt="Evaluation" >
-        <div class="caption">Site map for reviewers</div>
+         <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Site Map for the Django Sytem</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+    <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:200px;font-size:20px"> Site Map for the Django Reviewers and Approvers (IXN Leads)</h5>
 
+       <br>
+       <center> <img src="img/implementation/reviewersitemap.png" alt="Evaluation" >
+        <div class="caption">Fig. Site map for reviewers</div></center>
 
-      <h6> Site map for Django Users </h6>
-        <img src="img/implementation/usersitemap.png" alt="Evaluation" >
-        <div class="caption">Site map for users</div>
+        <br>
+        <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:400px;font-size:20px"> Site Map for the Django Submitters (Applicants)</h5>
+        <br>
+        <center><img src="img/implementation/usersitemap.png" alt="Evaluation" >
+        <div class="caption">Fig. Site map for users</div></center>
 
-      <h6> ER diagram for Django </h6>
-      </p> Here is a diagram showing the relationships between the different models in our Django implementation. Within Django our data is stored in an SQLite 3 Database, with aid the of the Django back-end servers and model functionality.
+        <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> ER Diagram for Django</h4>
 
+      <p> Here is a diagram showing the relationships between the different models in our Django implementation. Within Django our data is stored in an SQLite 3 Database, with aid the of the Django back-end servers and model functionality.
+      </p>
 
-        <img src="img/implementation/ERdiagramdjango.jpeg" alt="erdiagaram" style="width:750px;height:600px;">
-        <div class="caption">ER Diagram</div>
+       <center> <img src="img/implementation/ERdiagramdjango.jpeg" alt="erdiagaram" style="width:750px;height:600px;">
+        <div class="caption">ER Diagram</div></center>
         <!-- Pager -->
        </p> 
       </div>
     </div>
   </div>
   &nbsp;
-  <hr class="rounded">
+  <br>
+  <hr>
   
+<!-- Footer -->
+  <footer style="display:block; background:url('img/implementation/greenish.jpg') top right repeat-y; width:1440px; margin-left:-240px; background-size: cover; height:380px;  margin-bottom:0px;  padding:20px">
+   
+   
+    <div class="container" >
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
+      <center> <h2 style="color:rgba(255,255,255,0.7)">Team 27</h2></center><br>
+
+      <div class="row" style="width:1445px; background-color:white; margin-left:-170px; padding:20px">
+        <div class ="text-center">
+        <ul class="list-inline text-center" text-center>
+
+            <li class="list-inline-item text-center">
+            <div class="col">
+         <center><img src="img/footer/ucl2.jpg"  style="width: 200px;margin-left:200px" align:"center"></img> </center>
+          </div></li>
+
+           <li class="list-inline-item">
+           <div class="col">
+           <center><img src="img/footer/ixn.jpeg" style="width:150px"></img> </center>
+          </div></li>
+
+          <li class="list-inline-item">
+           <img src="img/footer/ibm.png" style="width: 110px"></img>
+          </li>
+
+           <li class="list-inline-item">
+            <div class="col">
+          <img src="img/footer/microsoft.jpg"  style="width: 220px"></img>
+          </div></li>
+
+           <li class="list-inline-item">
+            <div class="col">
+          <img src="img/footer/index.jpg"  style="width: 150px"></img>
+          </div></li>
+
+          </ul>
+         </div>
+          </div>
+          
+          
+
+        <br><br>
+
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
+        
+           <center> <h4 style="color:rgba(255,255,255,0.5)">COMP0016, 2020-21</h4></center>
           <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
         </div>
       </div>
     </div>
+    
   </footer>
 
   <!-- Bootstrap core JavaScript -->
