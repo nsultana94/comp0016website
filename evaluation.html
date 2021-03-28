@@ -22,6 +22,7 @@
   <link href="css/clean-blog.min.css" rel="stylesheet">
 
 </head>
+
 <style>
 table {
   font-family: arial, sans-serif;
@@ -44,15 +45,15 @@ tr:nth-child(even) {
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="width:100%; ">
     <div class="container">
-      <a class="navbar-brand" href="index.html">CFP Portal Engine</a>
+      <a class="navbar-brand" href="index.html" style=" margin-left:-100px; background: rgba(0,0,0,0.4); color: white">CFP Portal Engine</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto"  >
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
@@ -83,8 +84,11 @@ tr:nth-child(even) {
           <li class="nav-item">
             <a class="nav-link" href="evaluation.html">Evaluation</a>
           </li>
-          <li class="nav-item">
+           <li class="nav-item">
             <a class="nav-link" href="appendices.html">Appendices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="appendices.html">Development Blog</a>
           </li>
           
         </ul>
@@ -93,8 +97,8 @@ tr:nth-child(even) {
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-color:#006d5b">
-    <div class="overlay"></div>
+  <header class="masthead" style="background:url('img/implementation/greenish.jpg') top right repeat-x;  background-size: cover;   ">
+     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
@@ -111,13 +115,48 @@ tr:nth-child(even) {
   <div class="container">
     <div class="row">
       <div class="container-md">
-        <h3> Summary of achievements </h3>
-       
-            <h5> An achievement table to list the MoSCoW features, the completed states, and contributors</h5>
-<img src="img/implementation/moscow.png" alt="MoSCoW" style="width: 900px" >
+       <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Summary of Achievements </h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+       <br>
+            <center><h5> <hr>An achievement table to list the MoSCoW features, the completed states, and contributors<hr></h5></center><br>
+<center><img src="img/implementation/moscow.png" alt="MoSCoW" style="width: 900px" ></center>
 </p>
+<br>
 <hr>
-            <h5> List of known bugs </h5>
+            <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">List of Known Bugs</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <table>
   <tr>
@@ -159,10 +198,28 @@ tr:nth-child(even) {
 
   </table>
   </p>
+  <br>
   <hr>
   
             
-            <h5> Individual contribution table </h5>
+           <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Individual Contribution Table</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
             <table>
   <tr>
     <th>Work packages</th>
@@ -213,7 +270,7 @@ tr:nth-child(even) {
   <td> Testing </td>
   <td> 45% </td>
   <td> 45% </td>
-  <td> 10 </td>
+  <td> 10% </td>
 
 </tr>
 <tr> 
@@ -252,10 +309,29 @@ Tester, Report Website Editor</td>
 
  
 </table>
-
+<br>
 <hr>
-        <h3> Critical evaluation of the project </h3>
-        <h5> User interface / user experience [TODO] </h5>
+       <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Critical Evaluation of the Project</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:500px;font-size:20px"> User interface / user experience [TODO]</h4>
+
 
         </p> After feedback from the users, most users expressed that the UI was very clear to use and user-friendly. They expressed
         the layout and flow was very clear and simple enough to understand for both systems. Users also expressed that the system 
@@ -268,7 +344,9 @@ Tester, Report Website Editor</td>
         of the user-experience. The visibility of the system could also be improved by clearly marking aspects of the system that is clickable, this could be done by changing the colour
         when you hover over the button.
     </p>
-        <h5> Functionality  [TODO] </h5>
+    <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Functionality  [TODO]</h4>
+
+
 
         </p> We think both systems provide the main functionalities required for a CFP portal. In both systems, the user can submit projects which will be collected and displayed for
         reviewers to view. The reviewers are able to categorise projects and search for them as necessary. Both systems also have the functionality of adding feedback to a project,
@@ -279,7 +357,9 @@ Tester, Report Website Editor</td>
         can only export the full project list or the full accepted list. I think it would have been better if we had added the functionality to export the data that is currently being \
         displayed so results of queries could also be exported too. 
 </p>
-        <h5> Stability  [TODO] </h5>
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Stability  [TODO]</h4>
+
+
 
         </p> Due to the nature of Microsoft Sharepoint, the style and implementation of the lists and flows cannot be altered much as a user. The stability is maintained by Microsoft and as an user you cannot
         change the internal structure of these which may alter the overall functionality and stability of the system. Both technologies have been vastly used within organisations and tested under performance and 
@@ -288,7 +368,9 @@ Tester, Report Website Editor</td>
         In the future, it would be beneficial to implement an archiving feature in both systems, as over time the number of projects submitted may overwhelm the system and so may result in instability 
         due to the huge amount of data. The archiving feature could archive the database used and hence reset the project displays.
 </p>
-        <h5> Efficiency   [TODO]</h5>
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Efficiency   [TODO]</h4>
+
+
         [TODO: talk about good things]
 
 </p>
@@ -296,7 +378,9 @@ Tester, Report Website Editor</td>
         the entire collation of projects, as this may be difficult to sort through and display. This may have been more efficient for the users, 
         as otherwise they have to filter or search through it accordingly.
 </p>
-        <h5> Compatibility  [TODO] </h5>
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Compatibility  [TODO] </h4>
+
+
         [TODO: talk about good things]
 
 
@@ -312,14 +396,21 @@ Tester, Report Website Editor</td>
         usable on mobile devices, as currently it is only formatted correctly using a laptop. Many users may not necessarily use a laptop for this feature, and so in the future it would be good to develop this for mobile devices too. 
 
 
+<<<<<<< HEAD
   </p>
         <h5> Maintainability [TODO]  </h5>
+=======
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Maintainability [TODO]</h4>
+
+
+>>>>>>> 35ba292184c7f964c261484cfea3a295d923f571
 </p>
         The SharePoint system is very easy to maintain due to the robust nature of the system. Power Automate handles the majority of the back-end and is well maintained by Microsoft. 
         If a flow failed, the owner would receive emails alerting them of this as well as the source of the error. As a result, any bugs can be easily fixed or improvements can 
         be made easily to flows. However, any bugs found in the execution of the flows or the lists may be more difficult to fix due to the inability 
         to change the internal structure of these as a regular user. If these bugs persist, a problem is that you will have to depend on Microsoft to fix these issues internally.
 </p>
+<<<<<<< HEAD
         <h5> Project management [TODO]  </h5>
         Our project management as a team was greatly aided by the use of the Gantt Chart and the Trello board. We communicated well through the use of Whatsapp groups and 
         utilised Microsoft Teams as a means for video calling/meeting with clients. We tried to ensure that our project was constantly up to date, 
@@ -327,8 +418,28 @@ Tester, Report Website Editor</td>
 </p>
         To keep all our files safely stored in the cloud, we created multiple channels within our team in Microsoft Teams and organised them accordingly. This not only provided us a means
         to access any document when required but to allow efficient collaboration within a single document. This was very useful when creating our team presentation and deliverables.
+=======
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Project management [TODO]</h4>
+
+       <br>
+        
+>>>>>>> 35ba292184c7f964c261484cfea3a295d923f571
         <hr>
-        <h3> Future work [TODO]  </h3>
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Future Work [TODO]</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
         There are multiple things we wanted to implement and progress further, however could not due to lack of time. For example:
         </p>

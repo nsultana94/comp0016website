@@ -23,18 +23,37 @@
 
 </head>
 
+<style>
+table {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: 	#F5F5F5;
+}
+</style>
+
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="width:100%; ">
     <div class="container">
-      <a class="navbar-brand" href="index.html">CFP Portal Engine</a>
+      <a class="navbar-brand" href="index.html" style=" margin-left:-100px; background: rgba(0,0,0,0.4); color: white">CFP Portal Engine</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto"  >
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
@@ -65,8 +84,11 @@
           <li class="nav-item">
             <a class="nav-link" href="evaluation.html">Evaluation</a>
           </li>
-          <li class="nav-item">
+           <li class="nav-item">
             <a class="nav-link" href="appendices.html">Appendices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="appendices.html">Development Blog</a>
           </li>
           
         </ul>
@@ -75,14 +97,14 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-color:#006d5b">
+  <header class="masthead" style="background:url('img/implementation/greenish.jpg') top right repeat-x;  background-size: cover;   ">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
             <h1>Appendices</h1>
-            <span class="subheading">Appendicies</span>
+            <span class="subheading">Further processes and guidelines</span>
           </div>
         </div>
       </div>
@@ -93,13 +115,48 @@
   <div class="container">
     <div class="row">
       <div class="container-md">
-        <h3> User Manual </h3>
-       <a href="https://drive.google.com/file/d/1qS4acjICF7qZz-15Kz6pfCM47m4umAM-/view?usp=sharing" class="btn btn-primary">Sharepoint User Manual</a>
-       <a href="https://drive.google.com/file/d/10IO62wTiicFYC1jTwbM8pb0bMQTah8EH/view?usp=sharing" class="btn btn-primary">Django User Manual</a> 
-        <hr>
-<h3 > Sharepoint Deployment </h3>
+             <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">User Manual</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br> <center>
+       <a href="https://drive.google.com/file/d/1qS4acjICF7qZz-15Kz6pfCM47m4umAM-/view?usp=sharing" class="btn btn-outline-dark">Sharepoint User Manual</a>
+       <a href="https://drive.google.com/file/d/10IO62wTiicFYC1jTwbM8pb0bMQTah8EH/view?usp=sharing" class="btn btn-outline-dark">Django User Manual</a> 
+        </center><br><hr>
+      <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">SharePoint Deployment</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
+<br>
 <b>Script to run for deployment: </b>
 </p>
 1. $adminSiteUrl = "https://team29webapp-admin.sharepoint.com" (Admin puts in their own
@@ -128,15 +185,53 @@ Remove-SPOSiteDesign -Identity $siteDesignId
 <b>The site script file is contained in the google drive link below, as well as the relevant power automate flows and some videos guiding you through the set up. There are three flows exported as zips: the project proposal flow, the feedback flow and the approval flow. The videos will guide you to import these flows as well as set up the site. The site script will create the lists for you, however the styling of the site must be done by you afterwards. 
 You should watch the 'setting up the site' video first, and then the set up the flows. </b>
 </p>
-<a href="https://drive.google.com/drive/folders/1qwu_olDBiciilCAbnHcX4YiU-SN6IpJV?usp=sharing" class="btn btn-primary">Sharepoint deployment files</a>
+<center>
+<a href="https://drive.google.com/drive/folders/1qwu_olDBiciilCAbnHcX4YiU-SN6IpJV?usp=sharing" class="btn btn-outline-dark">Sharepoint deployment files</a></center>
 </p>
-<a href="https://forms.office.com/Pages/ShareFormPage.aspx?id=_oivH5ipW0yTySEKEdmlwuaS2kBwR75BhHpYlnK_ZSNUOTMzSEY2WVlMVTZNTk9WM0kwQzBMREU5Si4u&sharetoken=uxspDoRNmVON9e0RaLUW" class="btn btn-primary">Duplicate SharePoint form</a>
-<hr>
-<h3 > Django Deployment </h3>
-<a href="https://drive.google.com/file/d/1HE7sEck8U8Ettj-MG44KTRZqdjaGRs6M/view?usp=sharing" class="btn btn-primary">Full Deployment Manual</a>
+<center>
+<a href="https://forms.office.com/Pages/ShareFormPage.aspx?id=_oivH5ipW0yTySEKEdmlwuaS2kBwR75BhHpYlnK_ZSNUOTMzSEY2WVlMVTZNTk9WM0kwQzBMREU5Si4u&sharetoken=uxspDoRNmVON9e0RaLUW" class="btn btn-outline-dark">Duplicate SharePoint form</a></center>
+<br><hr>
+      <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Django Deployment</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <center>
+<a href="https://drive.google.com/file/d/1HE7sEck8U8Ettj-MG44KTRZqdjaGRs6M/view?usp=sharing" class="btn btn-outline-dark">Full Deployment Manual</a></center>
 
 </p>
-<h3 > Legal statement </h3>
+<br><hr>
+      <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Legal Statement</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
    </p>  
    <b>The software is an early proof of concept for development purposes and should not be used as-is in a live environment without further redevelopment and/or testing. 
    No warranty is given and no real data or personally identifiable data should be stored.
