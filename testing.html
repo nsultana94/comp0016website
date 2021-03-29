@@ -144,11 +144,14 @@ tr:nth-child(even) {
 </div>
 
       
-      [TODO]
+   
 
-      </p> Throughout the project we tried to adapt the agile technique of Test-Driven Development. This allowed us to test constantly after we implemented each feature, and allowed to us to ensure that each feature was fully functional and bug free before we continued working
+      </p> Throughout the project we tried to adapt the Agile technique of Test-Driven Development. 
+      Test Driven Development provided key benefits for the numerous iterations of refactoring, because the latter could have potentially broken the code. In order to notice if the amendments post- refactoring had a negative impact on our code, we tested the newly implemented code extensively via TDD.
+      This allowed us to test constantly after we implemented each feature, and allowed to us to ensure that each feature was fully functional and bug-free before we continued working
       on another feature. We were able to adapt pair programming through the development process and so as a result, we were able to give feedback on each other's code and test for bugs. We would also have frequent code reviews of each other's code
       in order to make sure the code was seamless and bug free. 
+      
 
       </p> As we were trying to do TDD, this revealed to us many bugs as we developed, but they were easy to solve as it was easy to pinpoint the source of the bugs. This is because, we would only push to the main branch in the repo  only if the code was functioning and so we knew that it was working up until that point.
       We also made great use of the github branch funtionality, so created branches for different versions of the code so we could preserve fully working code and implement new features on a new branch so we could test thoroughly before merging the branches.
@@ -157,7 +160,7 @@ tr:nth-child(even) {
       </p>Throughout the development process, we tested each feature thoroughly by testing the functionality as we went. For instance, for testing the submission portal, we tested the system's response to a submission with correct data formats, and then a submission with incorrect data formats, and ensured the
       results were as expected.
       </p>
-      [TODO]
+      Github - Source Control: Given the accelerated pace at which the process had to be developed and temporary impediments caused by rising errors, unspotted bugs, or potential malfunctions, the Version Control came at hand for acknowledging every teammate’s progress as well as the overall code status.</p>
     <hr>
 
       <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
@@ -175,7 +178,7 @@ tr:nth-child(even) {
       </div>
     </div>
   </div>
-      [TODO]
+
 
       
       </p>When developing the key features, we tested each process in small increments as we developed. For instance, when developing the submission portal, we tested whether the data was correctly being stored into the database before
@@ -195,7 +198,7 @@ tr:nth-child(even) {
      </p> [TODO] maybe screenshots of the tests working?
 
       
-</p> ----ADD MORE --- 
+</p> 
 
       <hr>
         <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
@@ -217,11 +220,11 @@ tr:nth-child(even) {
       
       When developing the SharePoint site, the most important aspect to test was the power automate flows. Therefore, after
       designing the flow, we tested each individual flow's functionality using Microsoft's inbuilt test functionality. This allowed us to manually trigger the flow by creating arbitrary data ourselves 
-      or automatically triggering the flow using a recent response or trigger. This allowed us test each flow separately, isolated from the entire system, and the system would show whether the 
+      or automatically triggering the flow using a recent response or trigger. This allowed us to test each flow separately, isolated from the entire system, and the system would show whether the 
       flow failed or succeeded. It would show the point of failure clearly in the diagram, and so we were able to fix and restructure the design as we developed. By testing the
       flows individually, we could be confident that any source of bugs in functionality were not from the individual flows as we would be alerted by email if the flow failed.
 
-</p> [TODO]
+</p> 
       
   <hr>
       
@@ -241,14 +244,18 @@ tr:nth-child(even) {
     </div>
   </div>
    <br>
-      We developed the open-source django platform to be compatible for all screen sizes. The front-end was developed to use containers that were not fixed and fluid to the size of the screen. 
-      Initially, our side bar was fixed and our layout was fixed which causes display issues when changing the screen size from full screen. However, by changing the layout and containter types as well as 
-      adding an option to temporarily hide the navigation bar, this reduced the disarray from changing the screen size so all the key content was still shown and visible to the users.
+     
+      </p>
+      <p>
+      During our meetings with our clients, we asked for information regarding the devices and operating systems that are primarily utilised within NHS and other targeted, affiliated institutions. The main reason why we did this was to ensure the adaptability and flexibility during implementation and to address any necessary amendments during testing. 
+      We then found out that the NHS technical side is quite old fashioned which made us focus on delivering a product that is able to satisfy the internal software and hardware usage encountered on a regular basis within NHS. Therefore, since the compatibility testing emphasised potential disruptions and hurdles to adjust to the client's system, we started working
+      on a virtual environment, which we installed for the sole purpose of preserving the installations and configurations that are implemented in Django and Python with the most recent versions, but be able to acclimate quickly on our client's technical environment according to any versions of software they might use and any operating system. 
       
       </p>
       We also tried to test on different operating systems and devices. However, given the nature of the pandemic, it was difficult to obtain a large variety of devices and operating systems as all our devices used MacOS and our family 
       and friends also used similar devices, and this could only be tested after deployment. However, the testing did reveal some bugs in compatibility that should be addressed in the future.
-      </p> [TODO]
+      </p> 
+     
      <hr>
        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
     <div class="overlay"></div>
@@ -265,11 +272,17 @@ tr:nth-child(even) {
       </div>
     </div>
   </div>
+  <br>
+   We developed the open-source Django platform to be compatible for precise screen sizes. This is due to the fact that we did not take into account deploying our web portal for the NHS client on smartphones or other smaller-sized screen gadgets at this point. During implementation and development, it was easier to stick to one specific size and gadget, which is a desktop and create the user interfaces from ground up intended only for laptops. However, the front-end was developed to use containers that were not fixed and fluid to the size of the screen. 
+      Initially, our side bar was fixed and our layout was fixed which causes display issues when changing the screen size from full screen. However, by changing the layout and containter types as well as 
+      adding an option to temporarily hide the navigation bar, this reduced the disarray from changing the screen size so all the key content was still shown and visible to the users.
+      </p>
+      <p> We did some responsive testing after having deployed the Django Platform, and found it almost impossible to get the same rendering on the phone as we had on the laptop, due to not having manually adjusted the sizes in the CSS files to fit specific widths and heigths of various devices. A further improvement would address this issue.</p>
       We ran our Sharepoint site across multiple devices (smartphone and tablet) and there were no drawbacks regarding the key functionalities of the system. However, our system was not 
       designed for small screens and therefore a user may find it more difficult to navigate the website due to the lack of screen space. We also ran our site across multiple browsers (Firefox,
       Chrome, Opera, Safari) and there were no issues.
     
-      </p> [TODO]
+      </p> 
    
 </p>
 
@@ -293,7 +306,13 @@ tr:nth-child(even) {
       For the SharePoint implementation, the system will hopefully be used for future IXN project proposals. As a result, the system should be tested thoroughly 
       with the huge amount of proposals which will be submitted. 
       </p>
-      [TODO]
+      
+      <p> For both Django and SharePoint it was impossible due to the unprecedented times during the pandemic to thorougly test the sytems in order to assess their stability and critical infrastructure upon the breaking point. In order to assess an extremely intense web pages and server traffic and to see 
+      where the maximum capacity of the server hosting is reached, we should have popularised the project and distributed the deployed platforms via different means of communication, channels and social media platforms. By spreading the word about the project's testing phase and the need to urge people from all
+      across the world, within any age category and with any expertise, background, interest, we could have potentially gather data and statistics about the server loading and manisfestations depending the number of accesses, of usages, of submitted projects proposals simultaneously. The issue for not being able to do this
+      related to the simple fact that the deployment stage has been done only in the penultimate and continued to the last week of our project and the creation of surveys and forms would have taken too much time.
+      </p>
+
       <hr>
        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
     <div class="overlay"></div>
@@ -310,7 +329,7 @@ tr:nth-child(even) {
       </div>
     </div>
   </div>
-      [TODO]
+
 </p>
 We were unable to perform alpha testing during development due to the nature of the pandemic, as we could only run our application on the localhost. Therefore, we were only able to test
 the system after deployment to a server. 
@@ -666,7 +685,7 @@ For a beginner it requires a walkthrough and a user guide or demo through the sy
 
 
 
-        — Feedback from testers and project partners
+     
 
 
 
