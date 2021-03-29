@@ -155,7 +155,7 @@ tr:nth-child(even) {
             However, it was challenging to implement a SharePoint solution to the system for the NHS, as smaller hospitals and trusts may not have the technology to keep up to date with Microsoft’s system. 
             In addition to this, after speaking to our client, it was clear that amongst other issues, it would be difficult to gain acccess to certain files of 
             different confidentiality levels, considering they were representing real patients, adding an additional layer of bureaucracy.
-            Therefore, a possible solution was to implement a website using Django and Flask for the clients who do not have SharePoint ensuring inclusivity across 
+            Therefore, a possible solution was to implement a website using Django or Flask for the clients who do not have SharePoint ensuring inclusivity across 
             all possible users. This will be connected to a web gateway so data will remain confidential within companies. 
         </p>
         Once submitted proposals have been accepted by company leads and managers, it will be exported to a restful API where it will export a 
@@ -163,12 +163,55 @@ tr:nth-child(even) {
         The restful API will allow universities to publicly subscribe to listings of projects and to see what is available. 
         This data will be fed to the university intranets, for example their respective Sharepoint websites. 
         </p> 
-        A diagram is presented in Figure 1 highlighted the movement of data between the different components to show a basic overview of the architectural design of the overall system. 
+        The diagram presented in Figure 1 highlighted the movement of data between the different components to show a basic overview of the architectural design of the overall system. 
         </p>
         <center><img src="img/design/design1.png" alt="Evaluation" style="width:700px;height:200px;">
-        <div class="caption">Fig. Overall brief system architecture</div></center>
+        <div class="caption">Fig 1. Overall brief system architecture</div></center>
         <br>
         <hr>
+
+
+         <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Data Flow & User Flow - Explaining the Diagrams</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>
+  The explanation revolving around our diagrams provided below starts from delineating the types of users, i.e., submitters and reviewers. It can be noted that approvers will have the very same functionalities as reviewers do. 
+</p>
+The starting point bases on logging in the system by selecting the appropriate role (submitter, reviewer or approver) that filters through the authenticated permissions and allows the user to sign in but view only the limited range of elements and functions only they are entitled to access. We allow for smart auto-generated filling-ins when appropriate for putting at easy the experience of our users while utilising our platforms.  
+</p>
+When signed in, any user is able to view the main dashboard that retrieves from the database the most updated collection of project proposals alongside their status badge, their priority eventually if anyone has set that up, the submission and/or launching date and an active URL towards each project’s display page.  
+</p>
+For a submitter, the core element revolves around submitting a project proposal, where they can fill in a step-by-step form and provide necessary evidence, details and information to be reviewed next by the reviewing committee. After a successful submission, the collection of their projects is stored in the main history list or table with everything they have sent via our portal now filled in and displayed automatically. These users can also fill in and submit their company's details, they can resubmit a project proposal in the case in which some details (e.g., abstracts, evidence, title etc.) have upgraded in the meantime and need urgent amendments and adjustments.  
+</p>
+When a project proposal is sent via the portal, the system notifies the IXN leads to log in and assign a series of reviewers based on their availability and interest towards the topic and project’s field making use of hashtags, project complexity, area of research.  
+</p>
+After being assigned, for a reviewer, the system will redirect them towards the same history of the submitted project proposals which they can view, search through, filter, export as CSV. They can separately view the accepted, rejected or under review project proposals. The main role of a reviewer is to review the projects to which they have been assigned and provide feedback based on that.   
+</p>
+Additionally, based on each project's collection of reviews, an approver can accept or reject the project. 
+</p>
+Based on the collected reviews, if rejected, the submitter is notified and if marked with Amber, the applicant will be suggested to make some modifications and improve the current proposal and eventually resubmit it. If given red, the project is declared unsuccessful and is recycled by being stored in the rejected projects page. If given green, the proposal is successful, and the submitter is notified that the IXN committee is interested in pursuing the project implementation and development. From this point on, the projects are sent towards universities for being matched based on interests, talents, expertise, background. 
+
+ 
+
+ 
+  </p>
+  <br><hr>
          <div class="container"  style="text-align:justify">
     <div class="row">
       <div class="container-md">
@@ -267,6 +310,71 @@ tr:nth-child(even) {
 
         <br><hr>
 
+ <div class="container"  style="text-align:justify">
+    <div class="row">
+      <div class="container-md">
+        <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+           <p> </p>
+            <center><h2 style="color:white">Front-End & Back-end of Django System - Explained</h2>
+            <span class="subheading" style="color:white"></span></center>
+            <p> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+      <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:800px;font-size:20px"> Users</h5>
+
+  <p>
+  There are three types of users, namely submitters, reviewers and approvers, whose permissions we configured through the Django admin’s system.  
+  
+  </p>
+  <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:300px;font-size:20px"> Submitter. Submission Portal and the Process</h5>
+
+  <p>
+As a submitter, we are able to submit a new project proposal via the submission portal implemented with smart wizard forms which allows for an efficient division of the whole form into 5 steps based on categories.  
+
+the Form class is linked to the respective Model class by describing how the fields are structured and look like when displayed in a form. The fields of the Proposal Form class map to the < input > tags in the HTML file via forms .ModelForm and displayed for the user in the front-end interface by overriding the Widget class. For a clean and elegant rendering of the submission portal form, we have opted for importing the Django crispy forms module . It provided us with the |crispy filter and {% crispy %} tag, that provides some in-build customisation for the form, along with the validation of the email, phone or date and time fields. The Taggable Manager Library is used to parse the hash tags with the use of JavaScript and Bootstrap so tags can be associated with projects.   
+  </p>
+
+ <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:300px;font-size:20px"> Home page. History of Submitted Project Proposals</h5>
+
+  <p>
+When a submitter submits a project for approval, this sends a POST request to the backend server of Django which stores the data appropriately into the Project model alongside their unique indexes. This data is then displayed in the home page table in the project dashboard ordered by submission date, by iterating through the stored instances in the Project.  
+
+We are able to click on each project’s title which is an active link toward the project’s display page, rendered with the incorporation of primary keys in the URL passed as an argument. We can view the collection of the info stored in our database.   </p>
+
+ <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:300px;font-size:20px"> Reviewer. Review Portal and the Process</h5>
+
+  <p>The further functionalities can be noticed if logging in as an approver. We are now able to view on a project’s page the ASSIGN REVIEWERS section. The assignment is done in back-end through a POST request that allows the selection from a drop-down menu from among the reviewers, that are stored as a Many-to-Many field in the Person model. the reviewers are notified in the system that there are projects left to be reviewed. At this point, the reviewer can see the list of all the projects that have been assigned to review particularly to them and are redirected towards the Review Portal page associated in the URL with the unique index (primary key) of the project being reviewed. The information filled in for a review is stored in the Review model which has an identical mechanism with the Person model. 
+
+When a reviewer submits a review for a project, this sends a POST request to the backend server of Django which stores the data appropriately into the Review model alongside its primary key and the foreign key to the Person model. </p>
+  
+ <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:700px;font-size:20px"> Reviews Dashboard</h5>
+
+  <p>
+This data is then displayed in a tile-fashion in the review dashboard under the view all projects tab ordered by review date, by iterating through the stored instances in the Project. One can choose to view only the projects that are under review or the projects that are assigned to them to be reviewed. The same option buttons will appear for each view under each project title, namely the button of visiting the project page, the button of visiting the list of all the available feedbacks and reviews up to date and the button stating the status of the project, i.e., a link to the review portal if the reviewing period is still open.  </p>
+ <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:800px;font-size:20px"> Approver</h5>
+
+  <p>
+  Once the list of a maximum number of 10 reviews has been made available from the reviewers on the view feedback and review, an approver is now able to log in and accept or reject the project. The reviews are in the read-only format, so that the approvers can have a holistic overview of the reviews and can make an informed decision whether or not to pursue the project. Both the approval and the rejection are done through a GET request method and assessing which reference of the two accept/reject button is sent to the method. Depending on the action button, the accepted or rejected projects database is reloaded and the current project is stored accordingly, as well as its display in the respective views.py Also, the system automatically sends an email through the send_mail() method to the submitter in order to inform them upon the final decision of the approver regarding their project proposal. 
+ </p>
+
+ <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:400px;font-size:20px"> Accepted, Rejected, and Under Review Projects</h5>
+
+  <p>
+Besides, there are three more models, namely AcceptedProjects, RejectedProjects, and UnderReviewProjects, which contain a foreign key, one-to-one field towards the Person model. The database mechanism is identical with the ones presented above. </p>
+
+
+  <br><hr>
+
+
          <div class="container"  style="text-align:justify">
     <div class="row">
       <div class="container-md">
@@ -293,12 +401,12 @@ tr:nth-child(even) {
         <div class="caption">Fig. Site map for reviewers</div></center>
 
         <br>
-        <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:400px;font-size:20px"> Site Map for the Django Submitters (Applicants)</h5>
+        <h5 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:300px;font-size:20px"> Site Map for the Django Submitters (Applicants)</h5>
         <br>
         <center><img src="img/implementation/usersitemap.png" alt="Evaluation" >
-        <div class="caption">Fig. Site map for users</div></center>
+        <div class="caption">Fig. Site map for users</div></center><br
 
-        <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> ER Diagram for Django</h4>
+        <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:600px;font-size:20px"> ER Diagram for Django</h4>
 
       <p> Here is a diagram showing the relationships between the different models in our Django implementation. Within Django our data is stored in an SQLite 3 Database, with aid the of the Django back-end servers and model functionality.
       </p>
