@@ -330,7 +330,7 @@ Tester, Report Website Editor</td>
     </div>
   </div>
   <br>
-  <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:500px;font-size:20px"> User interface / user experience [TODO]</h4>
+  <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:500px;font-size:20px"> User interface / user experience </h4>
 
 
         </p> After feedback from the users, most users expressed that the UI was very clear to use and user-friendly. They expressed
@@ -343,8 +343,10 @@ Tester, Report Website Editor</td>
         a clearer UI of whether a project has been approved/rejected as well as when a person has successfully given feedback. This could improve clarity 
         of the user-experience. The visibility of the system could also be improved by clearly marking aspects of the system that is clickable, this could be done by changing the colour
         when you hover over the button.
+        <p>Furthermore, I would add an interactive help desk for technical issues and other types of problems when utilising the platform and a settings tab. I would extend the comments section through virtual chats between the users, a messaging feature, a mentor or supervisor pairing throughout the platform and a virtual guide to initiate you into how to use the platform. </p>
+        
     </p>
-    <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Functionality  [TODO]</h4>
+    <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Functionality </h4>
 
 
 
@@ -354,10 +356,12 @@ Tester, Report Website Editor</td>
         stored in an accepted projects database. The users are also able to export the data as required.
     </p>
         However, I think we can improve the functionality of some aspects of both systems. For example, in the Django system, currently the user 
-        can only export the full project list or the full accepted list. I think it would have been better if we had added the functionality to export the data that is currently being \
-        displayed so results of queries could also be exported too. 
+        can only export the full project list or the full accepted list. I think it would have been better if we had added the functionality to export the data that is currently being 
+        displayed so results of queries could also be exported too. Also, it would be better if the submitter has the possibility to view the history of the submitted project proposals as well as the accepted and rejected project lists
+        in order to gain some grasp and inspiration on what they can develop and come up with in the future. It would also permit for a free, open marketplace of projects as well as a strong network of people who might want to collaborate,
+        to guide one another and to provide mentorship, if need be.
 </p>
-<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Stability  [TODO]</h4>
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Stability  </h4>
 
 
 
@@ -368,10 +372,10 @@ Tester, Report Website Editor</td>
         In the future, it would be beneficial to implement an archiving feature in both systems, as over time the number of projects submitted may overwhelm the system and so may result in instability 
         due to the huge amount of data. The archiving feature could archive the database used and hence reset the project displays.
 </p>
-<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Efficiency   [TODO]</h4>
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Efficiency   </h4>
 
 
-        [TODO: talk about good things]
+  
 
 </p>
         Throughout the multiple tests we ran for both our system, there was not a single crash or fatal error that resulted in a loss of key functionalities. We found 
@@ -383,10 +387,14 @@ Tester, Report Website Editor</td>
         the entire collation of projects, as this may be difficult to sort through and display. This may have been more efficient for the users, 
         as otherwise they have to filter or search through it accordingly.
 </p>
-<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Compatibility  [TODO] </h4>
+<p>
+In the Django implementation, it would have been smart to use emulator devices in an emulation systems in order to adjust the widths and the heights on each view in the CSS files every time one was created. It would also have been efficient to create more factory and abstract classes
+that would allow a common trunk of methods, variables and similar elements with the permission to extend and specialise their functionalities later in other classes.
+</p>
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Compatibility   </h4>
 
 
-        [TODO: talk about good things]
+        
         We found that our SharePoint website was very compatible with a multitude of browsers and screen sizes. Due to the fact that the back-end of the website
         is Microsoft-based, we found that there were no issues with scaling and sizing, making the platform usable for all devices. We also found that the website ran on both 
         operating systems (Mac and Windows) which was expected. 
@@ -403,7 +411,10 @@ Tester, Report Website Editor</td>
         usable on mobile devices, as currently it is only formatted correctly using a laptop. Many users may not necessarily use a laptop for this feature, and so in the future it would be good to develop this for mobile devices too. 
 
 </p>
-<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Maintainability [TODO]</h4>
+<p>
+We developed the open-source Django platform to be compatible for precise screen sizes. This is due to the fact that we did not take into account deploying our web portal for the NHS client on smartphones or other smaller-sized screen gadgets at this point. During implementation and development, it was easier to stick to one specific size and gadget, which is a desktop and create the user interfaces from ground up intended only for laptops. However, the front-end was developed to use containers that were not fixed and fluid to the size of the screen. Initially, our side bar was fixed and our layout was fixed which causes display issues when changing the screen size from full screen. However, by changing the layout and containter types as well as adding an option to temporarily hide the navigation bar, this reduced the disarray from changing the screen size so all the key content was still shown and visible to the users. 
+</p>
+<h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Maintainability </h4>
 
 
 </p>
@@ -412,9 +423,22 @@ Tester, Report Website Editor</td>
         be made easily to flows. However, any bugs found in the execution of the flows or the lists may be more difficult to fix due to the inability 
         to change the internal structure of these as a regular user. If these bugs persist, a problem is that you will have to depend on Microsoft to fix these issues internally.
 </p>
-       <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Project management [TODO]</h4>
+<p>
+During meetings with our NHS client, regarding the maintainability of the Django platform, we found out that the NHS technical side is quite old fashioned which made us focus on delivering a product that is able to satisfy the internal software and hardware usage encountered on a regular basis within NHS. Therefore, since the compatibility testing emphasised potential disruptions and hurdles to adjust to the client's system, we started working on a virtual environment, which we installed for the sole purpose of preserving the installations and configurations that are implemented in Django and Python with the most recent versions, but be able to acclimate quickly on our client's technical environment according to any versions of software they might use and any operating system. 
+</p>
+<p>
+In terms of the maintainability under the lens of high-level refactoring, at first, we tackled the high-level refactoring, which revolved around the comprehensive and adequate applying and implementation of the above-mentioned design patterns since we wrote some perfunctory code in the first place that characterised through lower quality , higher
+redundancy, poorer structure.
+</p> Regarding the low-level refactoring, we were concerned about minimising or even
+eliminating redundancy issues. A later method through which we refactored was to split methods, to change the methods’ and variables’ names so they reflected in a more aggregated and targeted purpose as well as better comprehensibility and consistency.
+</p>
+       <h4 style="background:url('img/implementation/greenish.jpg');color:white; padding:10px; margin-left:0px;margin-right:650px;font-size:20px"> Project management </h4>
 
        <br>
+
+       <p>
+       We divided the project into subsystems, allocating tasks according to members’ personality traits, expertise, and preferences for better coordination and teamwork, utilising the DevOps practice. We constantly assessed the progress done holistically and by every teammate, which kept us on track, given the advancement through the course materials and resources as well as the time frames and logistics. We had a precise time over the weekend to video call given the discrepancy in our schedules and got prepared in advance of the meetings with notes, ideas and suggestions to yield to productive discussions. We could have improved the quality and efficiency of our meetings through sprints to augment the overall development process.
+       </p>
         Our project management as a team was greatly aided by the use of the Gantt Chart and the Trello board. We communicated well through the use of Whatsapp groups and 
         utilised Microsoft Teams as a means for video calling/meeting with clients. We tried to ensure that our project was constantly up to date, 
         by referring to our deadlines and trying to meet them.
@@ -424,7 +448,7 @@ Tester, Report Website Editor</td>
 </p>
         To improve, we felt that we could have utilised more of the in built functionalities within git, as our entire project had multiple repositories (Django code,
         report website, etc) and if there were more parts to our projects, it was likely that our code would have not been organised in a clear manner.
-        <hr>
+        </p><br><hr>
         <div class="masthead" style="background:url(https://startbootstrap.com/assets/img/overlay.svg), linear-gradient(45deg, black 0%, #006d5b 100%);">
     <div class="overlay"></div>
     <div class="container">
@@ -432,7 +456,7 @@ Tester, Report Website Editor</td>
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
            <p> </p>
-            <center><h2 style="color:white">Future Work [TODO]</h2>
+            <center><h2 style="color:white">Future Work </h2>
             <span class="subheading" style="color:white"></span></center>
             <p> </p>
           </div>
@@ -440,7 +464,7 @@ Tester, Report Website Editor</td>
       </div>
     </div>
   </div>
-
+    <br>
         There are multiple things we wanted to implement and progress further, however could not due to lack of time. For example:
         </p>
         <li> Include a single sign on (SSO) option for the Django implementation so users can integrate their pre-exisiting accounts to the system, preventing the need to create a new account from scratch </li>
@@ -448,8 +472,11 @@ Tester, Report Website Editor</td>
         <li> Functionality in both system for users to subscribe to the system. </li>
         <li> More advanced querying in the django and a more sophisticated technique of database storage </li>
         <li> Implement ML/AI solutions to provide suggestions of project proposals based on previous projects, as well prompting users for possible tags they could use. </li>
-
-
+        <li> Clear validation with instructions and warnings for incorrectly filled in fields in forms. </li>
+        <li> Implementing the idea of networks of people based on their interests, expertise that can connect via the platform. </li>
+        <li> Add an interactive help desk for technical issues and other types of problems when utilising the platform and a settings tab.</li>
+        <li> Extend the comments section through virtual chats between the users, a messaging feature, a mentor or supervisor pairing throughout the platform</li>
+        <li> Add virtual guide to initiate you into how to use the platform. </li>
         
     
      
